@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World-Class Cancer Treatment for Tumor Patients in China - Jinshazhou Hospital</title>
+    <meta name="description" content="World-leading cancer radiotherapy technology at Guangzhou University of Chinese Medicine Jinshazhou Hospital. Advanced cancer treatment for international tumor patients seeking medical care in China.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0066CC;
+            --primary-dark: #004c99;
+            --primary-light: #e6f2ff;
+            --accent: #00a8e8;
+            --accent-green: #28a745;
+            --text: #1a1a2e;
+            --text-light: #6c757d;
+            --bg: #ffffff;
+            --bg-light: #f8f9fa;
+            --bg-blue: #f0f7ff;
+            --border: #e9ecef;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        [dir="rtl"] {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .nav-container,
+        [dir="rtl"] .hero-container,
+        [dir="rtl"] .section-container,
+        [dir="rtl"] .footer-container,
+        [dir="rtl"] .step-container,
+        [dir="rtl"] .feature-card,
+        [dir="rtl"] .equipment-card,
+        [dir="rtl"] .testimonial-card,
+        [dir="rtl"] .contact-container,
+        [dir="rtl"] .stats-container {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .lang-select {
+            direction: ltr;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo i {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .lang-select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .lang-select:hover {
+            border-color: var(--primary);
+        }
+
+        .whatsapp-btn-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text);
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 50%, #dbeafe 100%);
+            position: relative;
+            overflow: hidden;
+            padding-top: 70px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(0,102,204,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0,168,232,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--text);
+        }
+
+        .hero-content h1 span {
+            color: var(--primary);
+            display: block;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 32px;
+            max-width: 540px;
+            line-height: 1.7;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: white;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            color: var(--text);
+        }
+
+        .badge i {
+            color: var(--accent-green);
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0,102,204,0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,102,204,0.4);
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-image-container {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-float-card {
+            position: absolute;
+            background: white;
+            padding: 16px 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-float-card.card-1 {
+            top: -20px;
+            left: -30px;
+            animation-delay: 0s;
+        }
+
+        .hero-float-card.card-2 {
+            bottom: 40px;
+            right: -20px;
+            animation-delay: 2s;
+        }
+
+        .hero-float-card i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .hero-float-card .card-text {
+            font-size: 0.85rem;
+        }
+
+        .hero-float-card .card-text strong {
+            display: block;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .stats-bar {
+            background: var(--primary);
+            padding: 40px 0;
+            position: relative;
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-alt {
+            background: var(--bg-light);
+        }
+
+        .section-blue {
+            background: var(--bg-blue);
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .section-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 1.8rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .equipment-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .equipment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .equipment-header {
+            padding: 30px 30px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .equipment-icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            background: var(--primary-light);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .equipment-title h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .equipment-title span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .equipment-body {
+            padding: 20px 30px 30px;
+            flex: 1;
+        }
+
+        .equipment-body p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .equipment-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .equipment-tag {
+            padding: 4px 12px;
+            background: var(--bg-light);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .mdt-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .mdt-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .mdt-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .mdt-list {
+            list-style: none;
+        }
+
+        .mdt-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mdt-list li:last-child {
+            border-bottom: none;
+        }
+
+        .mdt-list-icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .mdt-list-text h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .mdt-list-text p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .steps-container::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 3px;
+        }
+
+        .step-item {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0 auto 20px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .step-item:hover .step-number {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .step-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-stars {
+            color: #ffc107;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .testimonial-info h4 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .testimonial-info span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 100px 0;
+            color: white;
+        }
+
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .contact-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .contact-content p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-info-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+
+        .contact-info-text h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .contact-info-text p, .contact-info-text a {
+            font-size: 1rem;
+            opacity: 0.9;
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-cta-box {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 50px;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            color: var(--text);
+        }
+
+        .contact-cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+
+        .contact-cta-box p {
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+
+        .whatsapp-big-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px 48px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            width: 100%;
+        }
+
+        .whatsapp-big-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 20px;
+            display: block;
+        }
+
+        .footer {
+            background: var(--text);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-brand p {
+            opacity: 0.7;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .footer-links h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 40px auto 0;
+            padding: 20px 24px 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        .float-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .float-whatsapp:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content p { margin-left: auto; margin-right: auto; }
+            .hero-badges { justify-content: center; }
+            .hero-cta { justify-content: center; }
+            .hero-visual { order: -1; max-width: 600px; margin: 0 auto; }
+            .features-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .equipment-grid { grid-template-columns: 1fr; }
+            .mdt-content { grid-template-columns: 1fr; }
+            .contact-container { grid-template-columns: 1fr; gap: 60px; }
+            .footer-container { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .hero-content h1 { font-size: 2rem; }
+            .stats-container { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .features-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .steps-container { flex-direction: column; gap: 40px; }
+            .steps-container::before { display: none; }
+            .step-item { max-width: none; }
+            .footer-container { grid-template-columns: 1fr; }
+            .section { padding: 60px 0; }
+            .section-header h2 { font-size: 2rem; }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        [lang="zh"] body { font-family: 'Noto Sans SC', 'Inter', sans-serif; }
+        [lang="ar"] body { font-family: 'Noto Sans Arabic', 'Inter', sans-serif; }
+        [lang="ja"] body { font-family: 'Noto Sans JP', 'Inter', sans-serif; }
+        [lang="ko"] body { font-family: 'Noto Sans KR', 'Inter', sans-serif; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-hospital-alt"></i>
+                <span data-i18n="logo">Jinshazhou Radiotherapy</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#equipment" data-i18n="nav.equipment">Equipment</a></li>
+                <li><a href="#mdt" data-i18n="nav.mdt">MDT</a></li>
+                <li><a href="#process" data-i18n="nav.process">Process</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <select class="lang-select" id="langSelect" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="zh">中文</option>
+                    <option value="ar">العربية</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="ru">Русский</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="th">ไทย</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="mn">Монгол</option>
+                </select>
+                <a href="https://wa.me/8613318756178" class="whatsapp-btn-nav" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">
+                    World-Class Cancer Treatment
+                    <span>for Tumor Patients in China</span>
+                </h1>
+                <p data-i18n="hero.subtitle">
+                    Guangzhou University of Chinese Medicine Jinshazhou Hospital offers cutting-edge radiotherapy technology for international tumor patients seeking world-class cancer treatment in China.
+                </p>
+                <div class="hero-badges">
+                    <div class="badge"><i class="fas fa-check-circle"></i><span data-i18n="hero.badge1">CyberKnife M6</span></div>
+                    <div class="badge"><i class="fas fa-check-circle"></i><span data-i18n="hero.badge2">TrueBeam</span></div>
+                    <div class="badge"><i class="fas fa-check-circle"></i><span data-i18n="hero.badge3">TomoTherapy</span></div>
+                    <div class="badge"><i class="fas fa-check-circle"></i><span data-i18n="hero.badge4">Halcyon</span></div>
+                </div>
+                <div class="hero-cta">
+                    <a href="https://wa.me/8613318756178" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="hero.cta1">Free Consultation</span>
+                    </a>
+                    <a href="#equipment" class="btn-primary">
+                        <span data-i18n="hero.cta2">Explore Technology</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&h=600&fit=crop" alt="Modern Hospital">
+                </div>
+                <div class="hero-float-card card-1">
+                    <i class="fas fa-radiation"></i>
+                    <div class="card-text">
+                        <strong data-i18n="hero.card1.number">10+</strong>
+                        <span data-i18n="hero.card1.text">Advanced Radiotherapy Systems</span>
+                    </div>
+                </div>
+                <div class="hero-float-card card-2">
+                    <i class="fas fa-user-md"></i>
+                    <div class="card-text">
+                        <strong data-i18n="hero.card2.number">370+</strong>
+                        <span data-i18n="hero.card2.text">Medical Professionals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-i18n="stats.1.number">10+</span>
+                <span class="stat-label" data-i18n="stats.1.label">World-Class Radiotherapy Systems</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-i18n="stats.2.number">1,500</span>
+                <span class="stat-label" data-i18n="stats.2.label">Hospital Beds</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-i18n="stats.3.number">48</span>
+                <span class="stat-label" data-i18n="stats.3.label">ICU Beds</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-i18n="stats.4.number">50-70%</span>
+                <span class="stat-label" data-i18n="stats.4.label">Cost Savings vs. Western Countries</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-i18n="why.tag">Why Choose Us</span>
+                <h2 data-i18n="why.title">Why International Patients Choose Our Center</h2>
+                <p data-i18n="why.subtitle">We combine world-leading technology with compassionate care, providing a comprehensive cancer treatment experience that rivals the best institutions globally.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                    <h3 data-i18n="why.card1.title">Cutting-Edge Technology</h3>
+                    <p data-i18n="why.card1.text">Home to China's first CyberKnife M6 with AI, TrueBeam, TomoTherapy, Halcyon, and Ethos adaptive radiotherapy platform.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3 data-i18n="why.card2.title">MDT Team Approach</h3>
+                    <p data-i18n="why.card2.text">Multidisciplinary team including medical oncology, radiotherapy, surgery, interventional therapy, and traditional Chinese medicine.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3 data-i18n="why.card3.title">Affordable Excellence</h3>
+                    <p data-i18n="why.card3.text">Receive world-class treatment at a fraction of the cost compared to the US, UK, or other Western countries.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3 data-i18n="why.card4.title">No Waiting Lists</h3>
+                    <p data-i18n="why.card4.text">Immediate access to diagnostics and treatment. Same-week appointments available for most procedures.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-language"></i></div>
+                    <h3 data-i18n="why.card5.title">Full Language Support</h3>
+                    <p data-i18n="why.card5.text">Professional medical interpreters and bilingual staff to ensure clear communication throughout your journey.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 data-i18n="why.card6.title">Integrated TCM</h3>
+                    <p data-i18n="why.card6.text">Unique integration of modern radiotherapy with traditional Chinese medicine for holistic recovery and better outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="equipment">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-i18n="equipment.tag">Our Technology</span>
+                <h2 data-i18n="equipment.title">World-Leading Radiotherapy Equipment</h2>
+                <p data-i18n="equipment.subtitle">Our center has invested in the most advanced radiotherapy systems available globally, ensuring precision, safety, and optimal treatment outcomes for every patient.</p>
+            </div>
+            <div class="equipment-grid">
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-crosshairs"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.1.name">CyberKnife M6</h3>
+                            <span data-i18n="equip.1.subtitle">Accuray CyberKnife M6</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.1.desc">The 6th generation AI-powered robotic radiosurgery system with real-time tumor tracking and multi-leaf collimator. Treats tumors anywhere in the body with sub-millimeter precision in 1-5 sessions.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.1.tag1">Robotic Radiosurgery</span>
+                            <span class="equipment-tag" data-i18n="equip.1.tag2">Real-Time Tracking</span>
+                            <span class="equipment-tag" data-i18n="equip.1.tag3">Brain & Body Tumors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-circle-notch"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.2.name">TomoTherapy</h3>
+                            <span data-i18n="equip.2.subtitle">Accuray Helical TomoTherapy</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.2.desc">Integrates IMRT, IGRT, and DGRT into one system. 360-degree helical delivery with precision targeting accuracy of ±0.1mm, ideal for complex and multiple tumors.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.2.tag1">360° Helical Delivery</span>
+                            <span class="equipment-tag" data-i18n="equip.2.tag2">±0.1mm Precision</span>
+                            <span class="equipment-tag" data-i18n="equip.2.tag3">Complex Tumors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.3.name">TrueBeam</h3>
+                            <span data-i18n="equip.3.subtitle">Varian TrueBeam</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.3.desc">High-precision image-guided linear accelerator with HyperArc technology. Delivers rapid, accurate treatment for a wide range of cancers including lung, liver, prostate, and brain.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.3.tag1">Image-Guided</span>
+                            <span class="equipment-tag" data-i18n="equip.3.tag2">HyperArc</span>
+                            <span class="equipment-tag" data-i18n="equip.3.tag3">Versatile Application</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-brain"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.4.name">HyperArc</h3>
+                            <span data-i18n="equip.4.subtitle">Intracranial SRS Technology</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.4.desc">Non-coplanar stereotactic radiosurgery technology specifically for intracranial tumors. Sub-millimeter accuracy treating multiple brain metastases simultaneously in 10 minutes.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.4.tag1">Brain Metastases</span>
+                            <span class="equipment-tag" data-i18n="equip.4.tag2">Non-Coplanar</span>
+                            <span class="equipment-tag" data-i18n="equip.4.tag3">10-Min Treatment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-sync-alt"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.5.name">Halcyon</h3>
+                            <span data-i18n="equip.5.subtitle">Varian Halcyon System</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.5.desc">The world's first medical accelerator with 100% image guidance. Full digitalization, AI-powered, 6-minute complete treatment sessions with high patient comfort and quiet operation.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.5.tag1">100% Image Guidance</span>
+                            <span class="equipment-tag" data-i18n="equip.5.tag2">6-Min Sessions</span>
+                            <span class="equipment-tag" data-i18n="equip.5.tag3">AI-Powered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-robot"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.6.name">Ethos</h3>
+                            <span data-i18n="equip.6.subtitle">AI Adaptive Radiotherapy</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.6.desc">The world's first online adaptive radiotherapy platform. AI real-time adaptation to daily anatomical changes. Personalized treatment every session for prostate, bladder, cervical, and rectal cancers.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.6.tag1">AI Adaptive</span>
+                            <span class="equipment-tag" data-i18n="equip.6.tag2">Daily Adaptation</span>
+                            <span class="equipment-tag" data-i18n="equip.6.tag3">Pelvic Cancers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-atom"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.7.name">Brachytherapy</h3>
+                            <span data-i18n="equip.7.subtitle">GammaMedplus IX HDR</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.7.desc">High Dose Rate afterloader for precise internal radiation. Delivers radioactive sources directly to tumor sites. Short treatment times, outpatient procedures, high safety with minimal side effects.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.7.tag1">Internal Radiation</span>
+                            <span class="equipment-tag" data-i18n="equip.7.tag2">High Dose Rate</span>
+                            <span class="equipment-tag" data-i18n="equip.7.tag3">Cervical & Prostate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in">
+                    <div class="equipment-header">
+                        <div class="equipment-icon"><i class="fas fa-x-ray"></i></div>
+                        <div class="equipment-title">
+                            <h3 data-i18n="equip.8.name">MRI + CT Simulation</h3>
+                            <span data-i18n="equip.8.subtitle">4D MRI & Dual-Energy CT</span>
+                        </div>
+                    </div>
+                    <div class="equipment-body">
+                        <p data-i18n="equip.8.desc">Siemens 3.0T MRI with motion perception, 4D MRI respiratory gating, and dual-energy large-bore CT. Real-time adaptive imaging for precise tumor tracking during treatment.</p>
+                        <div class="equipment-tags">
+                            <span class="equipment-tag" data-i18n="equip.8.tag1">4D MRI</span>
+                            <span class="equipment-tag" data-i18n="equip.8.tag2">Motion Tracking</span>
+                            <span class="equipment-tag" data-i18n="equip.8.tag3">Real-Time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="mdt">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-i18n="mdt.tag">Team Approach</span>
+                <h2 data-i18n="mdt.title">Multidisciplinary Team (MDT) Model</h2>
+                <p data-i18n="mdt.subtitle">Our MDT brings together experts from multiple disciplines to create the most effective, personalized treatment plan for every patient.</p>
+            </div>
+            <div class="mdt-content">
+                <div class="mdt-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop" alt="Medical Team">
+                </div>
+                <div class="mdt-text fade-in">
+                    <ul class="mdt-list">
+                        <li>
+                            <div class="mdt-list-icon"><i class="fas fa-radiation"></i></div>
+                            <div class="mdt-list-text">
+                                <h4 data-i18n="mdt.item1.title">Radiation Oncology</h4>
+                                <p data-i18n="mdt.item1.text">Expert radiation oncologists using cutting-edge technology including CyberKnife, TrueBeam, and TomoTherapy for precise tumor targeting.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mdt-list-icon"><i class="fas fa-pills"></i></div>
+                            <div class="mdt-list-text">
+                                <h4 data-i18n="mdt.item2.title">Medical Oncology</h4>
+                                <p data-i18n="mdt.item2.text">Chemotherapy, immunotherapy, and targeted therapy specialists providing systemic treatment solutions.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mdt-list-icon"><i class="fas fa-cut"></i></div>
+                            <div class="mdt-list-text">
+                                <h4 data-i18n="mdt.item3.title">Surgical Oncology</h4>
+                                <p data-i18n="mdt.item3.text">Experienced surgeons using minimally invasive and robotic techniques for tumor removal when surgery is indicated.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mdt-list-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="mdt-list-text">
+                                <h4 data-i18n="mdt.item4.title">Traditional Chinese Medicine</h4>
+                                <p data-i18n="mdt.item4.text">TCM integration including acupuncture, herbal medicine, and rehabilitation to reduce side effects and improve recovery.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mdt-list-icon"><i class="fas fa-stethoscope"></i></div>
+                            <div class="mdt-list-text">
+                                <h4 data-i18n="mdt.item5.title">Interventional Therapy</h4>
+                                <p data-i18n="mdt.item5.text">Minimally invasive procedures including TACE, radiofrequency ablation, and particle implantation for localized treatment.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-blue" id="process">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-i18n="process.tag">Your Journey</span>
+                <h2 data-i18n="process.title">Your Treatment Journey</h2>
+                <p data-i18n="process.subtitle">From your first inquiry to post-treatment follow-up, we guide you every step of the way with personalized care and support.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-item fade-in">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title" data-i18n="process.step1.title">Free Consultation</h3>
+                    <p class="step-desc" data-i18n="process.step1.desc">Share your medical records via WhatsApp. Our team reviews your case and provides a preliminary treatment plan.</p>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title" data-i18n="process.step2.title">Travel Planning</h3>
+                    <p class="step-desc" data-i18n="process.step2.desc">We assist with visa guidance, flight recommendations, and hospital accommodation arrangements.</p>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title" data-i18n="process.step3.title">Arrival & Diagnosis</h3>
+                    <p class="step-desc" data-i18n="process.step3.desc">Airport pickup, comprehensive diagnostics, and MDT consultation to finalize your personalized treatment plan.</p>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title" data-i18n="process.step4.title">Treatment</h3>
+                    <p class="step-desc" data-i18n="process.step4.desc">Receive world-class radiotherapy with daily monitoring, side effect management, and continuous support.</p>
+                </div>
+                <div class="step-item fade-in">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title" data-i18n="process.step5.title">Follow-Up</h3>
+                    <p class="step-desc" data-i18n="process.step5.desc">Complete medical records in English, remote follow-up consultations, and coordination with your home doctors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-i18n="testimonials.tag">Patient Stories</span>
+                <h2 data-i18n="testimonials.title">What Our Patients Say</h2>
+                <p data-i18n="testimonials.subtitle">Real stories from international patients who found hope and healing at our center.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonials.1.text">"After being told I needed to wait 6 months for radiotherapy in my country, I came to Jinshazhou. The CyberKnife treatment was completed in just 3 sessions. The tumor shrank significantly. Incredible technology and caring staff."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">E</div>
+                        <div class="testimonial-info"><h4>Emily W.</h4><span>United Kingdom</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonials.2.text">"The cost was less than half what I would have paid back home, but the technology was even more advanced. The Halcyon system treated my prostate cancer in just 6 minutes per session. The whole experience was smooth and professional."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div class="testimonial-info"><h4>Robert C.</h4><span>United States</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonials.3.text">"My brain metastases were treated with HyperArc technology in a single 10-minute session. The precision was remarkable. The team coordinated everything from my arrival to follow-up. I am grateful for this second chance at life."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-info"><h4>Ahmed K.</h4><span>United Arab Emirates</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2 data-i18n="contact.title">Ready to Start Your Healing Journey?</h2>
+                <p data-i18n="contact.subtitle">Contact us today for a free consultation. Our international patient coordinator will respond within 24 hours to discuss your case and guide you through the next steps.</p>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-info-text">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/8613318756178" target="_blank">+86 133 1875 6178</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-info-text">
+                            <h4 data-i18n="contact.address">Address</h4>
+                            <p>No.1 Lichuan East Street, Jinshazhou, Baiyun District, Guangzhou, China</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-subway"></i></div>
+                        <div class="contact-info-text">
+                            <h4 data-i18n="contact.transport">Transport</h4>
+                            <p data-i18n="contact.transportDetail">Metro Line 6, Hengsha Station Exit C (100m walk)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-cta-box">
+                <h3 data-i18n="contact.ctaTitle">Get Free Consultation</h3>
+                <p data-i18n="contact.ctaText">Send us your medical records and we will provide a preliminary assessment within 24 hours.</p>
+                <a href="https://wa.me/8613318756178" class="whatsapp-big-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-i18n="contact.ctaButton">Contact on WhatsApp</span>
+                </a>
+                <span class="whatsapp-number">+86 133 1875 6178</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="fas fa-hospital-alt"></i> <span data-i18n="footer.brand">Jinshazhou Radiotherapy Center</span></h3>
+                <p data-i18n="footer.desc">Guangzhou University of Chinese Medicine Jinshazhou Hospital - A modern tertiary Grade-A hospital integrating medical treatment, teaching, scientific research, and preventive healthcare.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                <ul>
+                    <li><a href="#about" data-i18n="footer.link.about">About Us</a></li>
+                    <li><a href="#equipment" data-i18n="footer.link.equipment">Equipment</a></li>
+                    <li><a href="#mdt" data-i18n="footer.link.mdt">MDT Team</a></li>
+                    <li><a href="#process" data-i18n="footer.link.process">Treatment Process</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.services">Services</h4>
+                <ul>
+                    <li><a href="#" data-i18n="footer.link.stereotactic">Stereotactic Radiosurgery</a></li>
+                    <li><a href="#" data-i18n="footer.link.imrt">IMRT / IGRT</a></li>
+                    <li><a href="#" data-i18n="footer.link.brachytherapy">Brachytherapy</a></li>
+                    <li><a href="#" data-i18n="footer.link.tcm">TCM Integration</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.contact">Contact</h4>
+                <ul>
+                    <li><a href="https://wa.me/8613318756178" target="_blank">WhatsApp: +86 133 1875 6178</a></li>
+                    <li><span data-i18n="footer.address">No.1 Lichuan East Street, Jinshazhou, Guangzhou</span></li>
+                    <li><span data-i18n="footer.metro">Metro Line 6, Hengsha Station</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright"> 2024 Jinshazhou Hospital of Guangzhou University of Chinese Medicine. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <a href="https://wa.me/8613318756178" class="float-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <script>
+            // Full translations data
+                        const translations = {
+                en: {
+                    "logo": "Jinshazhou Radiotherapy",
+                    "nav.about": "About", "nav.equipment": "Equipment", "nav.mdt": "MDT", "nav.process": "Process", "nav.contact": "Contact",
+                    "hero.title": "World-Class Cancer Treatment
+<span>for Tumor Patients in China</span>",
+                    "hero.subtitle": "Guangzhou University of Chinese Medicine Jinshazhou Hospital offers cutting-edge radiotherapy technology for international tumor patients seeking world-class cancer treatment in China.",
+                    "hero.badge1": "CyberKnife M6", "hero.badge2": "TrueBeam", "hero.badge3": "TomoTherapy", "hero.badge4": "Halcyon",
+                    "hero.cta1": "Free Consultation", "hero.cta2": "Explore Technology",
+                    "hero.card1.number": "10+", "hero.card1.text": "Advanced Radiotherapy Systems",
+                    "hero.card2.number": "370+", "hero.card2.text": "Medical Professionals",
+                    "stats.1.number": "10+", "stats.1.label": "World-Class Radiotherapy Systems",
+                    "stats.2.number": "1,500", "stats.2.label": "Hospital Beds",
+                    "stats.3.number": "48", "stats.3.label": "ICU Beds",
+                    "stats.4.number": "50-70%", "stats.4.label": "Cost Savings vs. Western Countries",
+                    "why.tag": "Why Choose Us", "why.title": "Why International Patients Choose Our Center", "why.subtitle": "We combine world-leading technology with compassionate care, providing a comprehensive cancer treatment experience that rivals the best institutions globally.",
+                    "why.card1.title": "Cutting-Edge Technology", "why.card1.text": "Home to China's first CyberKnife M6 with AI, TrueBeam, TomoTherapy, Halcyon, and Ethos adaptive radiotherapy platform.",
+                    "why.card2.title": "MDT Team Approach", "why.card2.text": "Multidisciplinary team including medical oncology, radiotherapy, surgery, interventional therapy, and traditional Chinese medicine.",
+                    "why.card3.title": "Affordable Excellence", "why.card3.text": "Receive world-class treatment at a fraction of the cost compared to the US, UK, or other Western countries.",
+                    "why.card4.title": "No Waiting Lists", "why.card4.text": "Immediate access to diagnostics and treatment. Same-week appointments available for most procedures.",
+                    "why.card5.title": "Full Language Support", "why.card5.text": "Professional medical interpreters and bilingual staff to ensure clear communication throughout your journey.",
+                    "why.card6.title": "Integrated TCM", "why.card6.text": "Unique integration of modern radiotherapy with traditional Chinese medicine for holistic recovery and better outcomes.",
+                    "equipment.tag": "Our Technology", "equipment.title": "World-Leading Radiotherapy Equipment", "equipment.subtitle": "Our center has invested in the most advanced radiotherapy systems available globally, ensuring precision, safety, and optimal treatment outcomes for every patient.",
+                    "equip.1.name": "CyberKnife M6", "equip.1.subtitle": "Accuray CyberKnife M6", "equip.1.desc": "The 6th generation AI-powered robotic radiosurgery system with real-time tumor tracking and multi-leaf collimator. Treats tumors anywhere in the body with sub-millimeter precision in 1-5 sessions.", "equip.1.tag1": "Robotic Radiosurgery", "equip.1.tag2": "Real-Time Tracking", "equip.1.tag3": "Brain & Body Tumors",
+                    "equip.2.name": "TomoTherapy", "equip.2.subtitle": "Accuray Helical TomoTherapy", "equip.2.desc": "Integrates IMRT, IGRT, and DGRT into one system. 360-degree helical delivery with precision targeting accuracy of ±0.1mm, ideal for complex and multiple tumors.", "equip.2.tag1": "360° Helical Delivery", "equip.2.tag2": "±0.1mm Precision", "equip.2.tag3": "Complex Tumors",
+                    "equip.3.name": "TrueBeam", "equip.3.subtitle": "Varian TrueBeam", "equip.3.desc": "High-precision image-guided linear accelerator with HyperArc technology. Delivers rapid, accurate treatment for a wide range of cancers including lung, liver, prostate, and brain.", "equip.3.tag1": "Image-Guided", "equip.3.tag2": "HyperArc", "equip.3.tag3": "Versatile Application",
+                    "equip.4.name": "HyperArc", "equip.4.subtitle": "Intracranial SRS Technology", "equip.4.desc": "Non-coplanar stereotactic radiosurgery technology specifically for intracranial tumors. Sub-millimeter accuracy treating multiple brain metastases simultaneously in 10 minutes.", "equip.4.tag1": "Brain Metastases", "equip.4.tag2": "Non-Coplanar", "equip.4.tag3": "10-Min Treatment",
+                    "equip.5.name": "Halcyon", "equip.5.subtitle": "Varian Halcyon System", "equip.5.desc": "The world's first medical accelerator with 100% image guidance. Full digitalization, AI-powered, 6-minute complete treatment sessions with high patient comfort and quiet operation.", "equip.5.tag1": "100% Image Guidance", "equip.5.tag2": "6-Min Sessions", "equip.5.tag3": "AI-Powered",
+                    "equip.6.name": "Ethos", "equip.6.subtitle": "AI Adaptive Radiotherapy", "equip.6.desc": "The world's first online adaptive radiotherapy platform. AI real-time adaptation to daily anatomical changes. Personalized treatment every session for prostate, bladder, cervical, and rectal cancers.", "equip.6.tag1": "AI Adaptive", "equip.6.tag2": "Daily Adaptation", "equip.6.tag3": "Pelvic Cancers",
+                    "equip.7.name": "Brachytherapy", "equip.7.subtitle": "GammaMedplus IX HDR", "equip.7.desc": "High Dose Rate afterloader for precise internal radiation. Delivers radioactive sources directly to tumor sites. Short treatment times, outpatient procedures, high safety with minimal side effects.", "equip.7.tag1": "Internal Radiation", "equip.7.tag2": "High Dose Rate", "equip.7.tag3": "Cervical & Prostate",
+                    "equip.8.name": "MRI + CT Simulation", "equip.8.subtitle": "4D MRI & Dual-Energy CT", "equip.8.desc": "Siemens 3.0T MRI with motion perception, 4D MRI respiratory gating, and dual-energy large-bore CT. Real-time adaptive imaging for precise tumor tracking during treatment.", "equip.8.tag1": "4D MRI", "equip.8.tag2": "Motion Tracking", "equip.8.tag3": "Real-Time",
+                    "mdt.tag": "Team Approach", "mdt.title": "Multidisciplinary Team (MDT) Model", "mdt.subtitle": "Our MDT brings together experts from multiple disciplines to create the most effective, personalized treatment plan for every patient.",
+                    "mdt.item1.title": "Radiation Oncology", "mdt.item1.text": "Expert radiation oncologists using cutting-edge technology including CyberKnife, TrueBeam, and TomoTherapy for precise tumor targeting.",
+                    "mdt.item2.title": "Medical Oncology", "mdt.item2.text": "Chemotherapy, immunotherapy, and targeted therapy specialists providing systemic treatment solutions.",
+                    "mdt.item3.title": "Surgical Oncology", "mdt.item3.text": "Experienced surgeons using minimally invasive and robotic techniques for tumor removal when surgery is indicated.",
+                    "mdt.item4.title": "Traditional Chinese Medicine", "mdt.item4.text": "TCM integration including acupuncture, herbal medicine, and rehabilitation to reduce side effects and improve recovery.",
+                    "mdt.item5.title": "Interventional Therapy", "mdt.item5.text": "Minimally invasive procedures including TACE, radiofrequency ablation, and particle implantation for localized treatment.",
+                    "process.tag": "Your Journey", "process.title": "Your Treatment Journey", "process.subtitle": "From your first inquiry to post-treatment follow-up, we guide you every step of the way with personalized care and support.",
+                    "process.step1.title": "Free Consultation", "process.step1.desc": "Share your medical records via WhatsApp. Our team reviews your case and provides a preliminary treatment plan.",
+                    "process.step2.title": "Travel Planning", "process.step2.desc": "We assist with visa guidance, flight recommendations, and hospital accommodation arrangements.",
+                    "process.step3.title": "Arrival & Diagnosis", "process.step3.desc": "Airport pickup, comprehensive diagnostics, and MDT consultation to finalize your personalized treatment plan.",
+                    "process.step4.title": "Treatment", "process.step4.desc": "Receive world-class radiotherapy with daily monitoring, side effect management, and continuous support.",
+                    "process.step5.title": "Follow-Up", "process.step5.desc": "Complete medical records in English, remote follow-up consultations, and coordination with your home doctors.",
+                    "testimonials.tag": "Patient Stories", "testimonials.title": "What Our Patients Say", "testimonials.subtitle": "Real stories from international patients who found hope and healing at our center.",
+                    "testimonials.1.text": "After being told I needed to wait 6 months for radiotherapy in my country, I came to Jinshazhou. The CyberKnife treatment was completed in just 3 sessions. The tumor shrank significantly. Incredible technology and caring staff.",
+                    "testimonials.2.text": "The cost was less than half what I would have paid back home, but the technology was even more advanced. The Halcyon system treated my prostate cancer in just 6 minutes per session. The whole experience was smooth and professional.",
+                    "testimonials.3.text": "My brain metastases were treated with HyperArc technology in a single 10-minute session. The precision was remarkable. The team coordinated everything from my arrival to follow-up. I am grateful for this second chance at life.",
+                    "contact.title": "Ready to Start Your Healing Journey?", "contact.subtitle": "Contact us today for a free consultation. Our international patient coordinator will respond within 24 hours to discuss your case and guide you through the next steps.",
+                    "contact.address": "Address", "contact.transport": "Transport", "contact.transportDetail": "Metro Line 6, Hengsha Station Exit C (100m walk)",
+                    "contact.ctaTitle": "Get Free Consultation", "contact.ctaText": "Send us your medical records and we will provide a preliminary assessment within 24 hours.", "contact.ctaButton": "Contact on WhatsApp",
+                    "footer.brand": "Jinshazhou Radiotherapy Center", "footer.desc": "Guangzhou University of Chinese Medicine Jinshazhou Hospital - A modern tertiary Grade-A hospital integrating medical treatment, teaching, scientific research, and preventive healthcare.",
+                    "footer.quickLinks": "Quick Links", "footer.services": "Services", "footer.contact": "Contact",
+                    "footer.link.about": "About Us", "footer.link.equipment": "Equipment", "footer.link.mdt": "MDT Team", "footer.link.process": "Treatment Process",
+                    "footer.link.stereotactic": "Stereotactic Radiosurgery", "footer.link.imrt": "IMRT / IGRT", "footer.link.brachytherapy": "Brachytherapy", "footer.link.tcm": "TCM Integration",
+                    "footer.address": "No.1 Lichuan East Street, Jinshazhou, Guangzhou", "footer.metro": "Metro Line 6, Hengsha Station",
+                    "footer.copyright": " 2024 Jinshazhou Hospital of Guangzhou University of Chinese Medicine. All rights reserved."
+                },
+                zh: {
+                    "logo": "金沙洲放疗中心",
+                    "nav.about": "关于我们", "nav.equipment": "设备技术", "nav.mdt": "多学科诊疗", "nav.process": "服务流程", "nav.contact": "联系我们",
+                    "hero.title": "世界领先的癌症治疗
+<span>肿瘤患者中国就医</span>",
+                    "hero.subtitle": "广州中医药大学金沙洲医院为国际肿瘤患者提供尖端的放疗技术，是中国就医寻求世界一流癌症治疗的理想选择。",
+                    "hero.badge1": "射波刀 M6", "hero.badge2": "TrueBeam", "hero.badge3": "TOMO", "hero.badge4": "Halcyon",
+                    "hero.cta1": "免费咨询", "hero.cta2": "了解技术",
+                    "hero.card1.number": "10+", "hero.card1.text": "先进放疗系统",
+                    "hero.card2.number": "370+", "hero.card2.text": "医疗专业人员",
+                    "stats.1.number": "10+", "stats.1.label": "世界先进放疗系统",
+                    "stats.2.number": "1,500", "stats.2.label": "医院床位",
+                    "stats.3.number": "48", "stats.3.label": "ICU床位",
+                    "stats.4.number": "节省50-70%", "stats.4.label": "相比欧美国家费用",
+                    "why.tag": "为什么选择我们", "why.title": "国际患者选择我们的理由", "why.subtitle": "我们结合世界领先技术与 compassionate 关怀，提供可与全球最佳机构媲美的综合癌症治疗体验。",
+                    "why.card1.title": "尖端技术", "why.card1.text": "拥有中国首台AI射波刀M6、TrueBeam、TomoTherapy、Halcyon和Ethos自适应放疗平台。",
+                    "why.card2.title": "多学科诊疗团队", "why.card2.text": "多学科团队包括肿瘤内科、放疗科、外科、介入治疗科和传统中医。",
+                    "why.card3.title": "高性价比", "why.card3.text": "以远低于美国、英国等西方国家的价格，享受世界一流的医疗服务。",
+                    "why.card4.title": "无需等待", "why.card4.text": "即时获得诊断和治疗。大多数检查可在一周内安排。",
+                    "why.card5.title": "全程语言支持", "why.card5.text": "专业医疗翻译和双语工作人员确保您全程沟通无障碍。",
+                    "why.card6.title": "中西医结合", "why.card6.text": "现代放疗与传统中医的独特结合，实现整体康复和更好疗效。",
+                    "equipment.tag": "核心技术", "equipment.title": "世界领先的放疗设备", "equipment.subtitle": "我院引进全球最先进的放疗系统，确保每位患者都能获得精准、安全、最佳的治疗效果。",
+                    "equip.1.name": "射波刀 M6", "equip.1.subtitle": "安科锐第六代智能射波刀", "equip.1.desc": "第六代人工智能机器人放射外科系统，具备实时肿瘤追踪和多叶光栅技术。可在1-5次治疗中精准治疗全身各部位肿瘤，精度达亚毫米级。", "equip.1.tag1": "机器人放射外科", "equip.1.tag2": "实时追踪", "equip.1.tag3": "脑部和全身肿瘤",
+                    "equip.2.name": "TOMO 螺旋断层放疗", "equip.2.subtitle": "安科锐螺旋断层放疗系统", "equip.2.desc": "将IMRT、IGRT、DGRT集成于一体。360度螺旋照射，精准度达±0.1mm，特别适用于复杂和多发性肿瘤。", "equip.2.tag1": "360度螺旋照射", "equip.2.tag2": "±0.1mm精度", "equip.2.tag3": "复杂肿瘤",
+                    "equip.3.name": "TrueBeam 直线加速器", "equip.3.subtitle": "瓦里安TrueBeam系统", "equip.3.desc": "高精度图像引导直线加速器，配备HyperArc技术。快速精准治疗肺癌、肝癌、前列腺癌、脑肿瘤等多种癌症。", "equip.3.tag1": "图像引导", "equip.3.tag2": "HyperArc", "equip.3.tag3": "多用途应用",
+                    "equip.4.name": "HyperArc 技术", "equip.4.subtitle": "颅内立体定向放疗技术", "equip.4.desc": "专门针对颅内肿瘤的非共面立体定向放疗技术。亚毫米精度，10分钟内同时完成多个脑转移瘤的治疗。", "equip.4.tag1": "脑转移瘤", "equip.4.tag2": "非共面照射", "equip.4.tag3": "10分钟治疗",
+                    "equip.5.name": "Halcyon 智慧加速器", "equip.5.subtitle": "瓦里安Halcyon系统", "equip.5.desc": "全球首个100%图像引导的医用加速器。全数字化、AI智能化，单次治疗仅需6分钟，患者舒适度高、运行安静。", "equip.5.tag1": "100%图像引导", "equip.5.tag2": "6分钟治疗", "equip.5.tag3": "AI智能",
+                    "equip.6.name": "Ethos 智慧放疗平台", "equip.6.subtitle": "AI自适应放疗", "equip.6.desc": "全球首台在线自适应放疗平台。AI实时适应每日解剖变化，每次治疗均为个性化方案，适用于前列腺、膀胱、宫颈癌、直肠癌等。", "equip.6.tag1": "AI自适应", "equip.6.tag2": "每日调整", "equip.6.tag3": "盆腔肿瘤",
+                    "equip.7.name": "后装治疗机", "equip.7.subtitle": "GammaMedplus IX HDR", "equip.7.desc": "高剂量率近距离放疗设备，将放射源直接送达肿瘤部位。治疗时间短，可门诊治疗，安全性高，副作用小。", "equip.7.tag1": "内照射", "equip.7.tag2": "高剂量率", "equip.7.tag3": "宫颈癌和前列腺癌",
+                    "equip.8.name": "MRI + CT 模拟定位", "equip.8.subtitle": "4D MRI与双能CT", "equip.8.desc": "西门子3.0T运动感知MRI、4D MRI呼吸门控和双能大孔径CT。实时自适应成像，实现治疗中的精准肿瘤追踪。", "equip.8.tag1": "4D MRI", "equip.8.tag2": "运动追踪", "equip.8.tag3": "实时成像",
+                    "mdt.tag": "团队诊疗", "mdt.title": "多学科诊疗（MDT）模式", "mdt.subtitle": "我们的MDT汇集了多学科专家，为每位患者制定最有效、最个性化的治疗方案。",
+                    "mdt.item1.title": "放射肿瘤科", "mdt.item1.text": "专业放疗医师运用射波刀、TrueBeam、TomoTherapy等尖端技术进行精准肿瘤靶向治疗。",
+                    "mdt.item2.title": "肿瘤内科", "mdt.item2.text": "化疗、免疫治疗和靶向治疗专家提供全身系统性治疗方案。",
+                    "mdt.item3.title": "肿瘤外科", "mdt.item3.text": "经验丰富的外科医生运用微创和机器人技术进行肿瘤切除手术。",
+                    "mdt.item4.title": "传统中医", "mdt.item4.text": "针灸、中药和康复治疗的整合，减少副作用并促进康复。",
+                    "mdt.item5.title": "介入治疗", "mdt.item5.text": "TACE、射频消融和粒子植入等微创介入治疗，实现局部精准治疗。",
+                    "process.tag": "您的旅程", "process.title": "您的治疗旅程", "process.subtitle": "从首次咨询到治疗后随访，我们全程为您提供个性化护理和支持。",
+                    "process.step1.title": "免费咨询", "process.step1.desc": "通过WhatsApp分享您的病历资料。我们的团队将评估您的病例并提供初步治疗方案。",
+                    "process.step2.title": "行程规划", "process.step2.desc": "我们协助签证指导、航班推荐和医院住宿安排。",
+                    "process.step3.title": "抵达与诊断", "process.step3.desc": "机场接送、全面诊断检查和MDT会诊，制定最终个性化治疗方案。",
+                    "process.step4.title": "治疗", "process.step4.desc": "接受世界级放疗，全程日常监测、副作用管理和持续支持。",
+                    "process.step5.title": "随访", "process.step5.desc": "完整的英文病历资料，远程随访会诊，并与您本国医生协调。",
+                    "testimonials.tag": "患者故事", "testimonials.title": "患者心声", "testimonials.subtitle": "来自国际患者的真实故事，他们在我们的中心找到了希望与治愈。",
+                    "testimonials.1.text": "在本国被告知需要等待6个月才能接受放疗后，我来到了金沙洲。射波刀治疗仅用3次就完成了。肿瘤明显缩小。技术令人惊叹，医护团队充满关怀。",
+                    "testimonials.2.text": "费用不到本国的一半，但技术甚至更先进。Halcyon系统每次仅用6分钟治疗我的前列腺癌。整个体验顺畅而专业。",
+                    "testimonials.3.text": "我的脑转移瘤通过HyperArc技术在一次10分钟的治疗中完成。精度令人难以置信。团队协调了我从抵达到随访的所有事宜。我感激这个重生的机会。",
+                    "contact.title": "准备好开始您的康复之旅了吗？", "contact.subtitle": "立即联系我们进行免费咨询。我们的国际患者协调员将在24小时内回复您，讨论您的病例并指导您下一步。",
+                    "contact.address": "地址", "contact.transport": "交通", "contact.transportDetail": "地铁6号线横沙站C出口（步行100米）",
+                    "contact.ctaTitle": "获取免费咨询", "contact.ctaText": "发送您的病历资料，我们将在24小时内提供初步评估。", "contact.ctaButton": "WhatsApp咨询",
+                    "footer.brand": "金沙洲肿瘤放疗中心", "footer.desc": "广州中医药大学金沙洲医院——集医疗、教学、科研、预防为一体的现代化三级综合医院。",
+                    "footer.quickLinks": "快速链接", "footer.services": "服务项目", "footer.contact": "联系方式",
+                    "footer.link.about": "关于我们", "footer.link.equipment": "设备技术", "footer.link.mdt": "MDT团队", "footer.link.process": "治疗流程",
+                    "footer.link.stereotactic": "立体定向放疗", "footer.link.imrt": "调强放疗", "footer.link.brachytherapy": "近距离放疗", "footer.link.tcm": "中医整合",
+                    "footer.address": "广州市白云区金沙洲礼传东街1号", "footer.metro": "地铁6号线横沙站",
+                    "footer.copyright": " 2024 广州中医药大学金沙洲医院。保留所有权利。"
+                },
+                ar: {
+                    "logo": "مركز جينشا تشو للعلاج الإشعاعي",
+                    "nav.about": "من نحن", "nav.equipment": "التجهيزات", "nav.mdt": "الفريق المتعدد التخصصات", "nav.process": "العملية", "nav.contact": "اتصل بنا",
+                    "hero.title": "علاج عالمي المستوى للسرطان
+<span>بدون مغادرة بلدك</span>",
+                    "hero.subtitle": "استمتع بتقنية العلاج الإشعاعي المتطورة في مستشفى جينشا تشو التابع لجامعة الطب الصيني في قوانغتشو. يقدم مركز علم الأورام الإشعاعي لدينا أحدث علاج للسرطان في العالم.",
+                    "hero.badge1": "سايبر نايف M6", "hero.badge2": "تروبيم", "hero.badge3": "تومو ثيرابي", "hero.badge4": "هالسيون",
+                    "hero.cta1": "استشارة مجانية", "hero.cta2": "استكشف التقنية",
+                    "hero.card1.number": "10+", "hero.card1.text": "أنظمة علاج إشعاعي متقدمة",
+                    "hero.card2.number": "370+", "hero.card2.text": "محترفين طبيين",
+                    "stats.1.number": "10+", "stats.1.label": "أنظمة علاج إشعاعي عالمية",
+                    "stats.2.number": "1,500", "stats.2.label": "أسرة المستشفى",
+                    "stats.3.number": "48", "stats.3.label": "أسرة العناية المركزة",
+                    "stats.4.number": "50-70%", "stats.4.label": "توفير التكاليف مقارنة بالغرب",
+                    "why.tag": "لماذا نحن", "why.title": "لماذا يختار المرضى الدوليون مركزنا", "why.subtitle": "نجمع بين التكنولوجيا العالمية والرعاية المتميزة، لنوفر تجربة علاج شاملة تضاهي أفضل المؤسسات عالمياً.",
+                    "why.card1.title": "تقنية متطورة", "why.card1.text": "أول سايبر نايف M6 مدعوم بالذكاء الاصطناعي في الصين، تروبيم، تومو ثيرابي، هالسيون، ومنصة إيثوس للعلاج التكيفي.",
+                    "why.card2.title": "فريق متعدد التخصصات", "why.card2.text": "فريق متعدد التخصصات يشمل الأورام الطبية والإشعاعية والجراحة والعلاج التدخلي والطب الصيني التقليدي.",
+                    "why.card3.title": "تفوق بأسعار معقولة", "why.card3.text": "احصل على علاج عالمي المستوى بجزء بسيط من التكلفة مقارنة بأمريكا وبريطانيا والدول الغربية الأخرى.",
+                    "why.card4.title": "بدون قوائم انتظار", "why.card4.text": "وصول فوري للتشخيص والعلاج. مواعيد متاحة في نفس الأسبوع لمعظم الإجراءات.",
+                    "why.card5.title": "دعم كامل باللغة", "why.card5.text": "مترجمون طبيون محترفون وموظفون ثنائيو اللغة لضمان تواصل واضح طوال رحلتك.",
+                    "why.card6.title": "تكامل الطب الصيني", "why.card6.text": "تكامل فريد بين العلاج الإشعاعي الحديث والطب الصيني التقليدي للتعافي الشامل ونتائج أفضل.",
+                    "equipment.tag": "تقنياتنا", "equipment.title": "أجهزة علاج إشعاعي عالمية المستوى", "equipment.subtitle": "استثمر مركزنا في أكثر أنظمة العلاج الإشعاعي تقدماً عالمياً، لضمان الدقة والسلامة وأفضل نتائج العلاج لكل مريض.",
+                    "equip.1.name": "سايبر نايف M6", "equip.1.subtitle": "أكوراي سايبر نايف M6", "equip.1.desc": "نظام الجراحة الإشعاعية الروبوتية من الجيل السادس المدعوم بالذكاء الاصطناعي مع تتبع الورم في الوقت الفعلي. يعالج الأورام في أي مكان في الجسم بدقة دون المليمتر في 1-5 جلسات.", "equip.1.tag1": "جراحة إشعاعية روبوتية", "equip.1.tag2": "تتبع في الوقت الفعلي", "equip.1.tag3": "أورام الدماغ والجسم",
+                    "equip.2.name": "تومو ثيرابي", "equip.2.subtitle": "أكوراي هيليكال تومو ثيرابي", "equip.2.desc": "يدمج IMRT وIGRT وDGRT في نظام واحد. توصيل حلزوني 360 درجة بدقة ±0.1 ملم، مثالي للأورام المعقدة والمتعددة.", "equip.2.tag1": "توصيل حلزوني 360°", "equip.2.tag2": "دقة ±0.1 ملم", "equip.2.tag3": "أورام معقدة",
+                    "equip.3.name": "تروبيم", "equip.3.subtitle": "فاريان تروبيم", "equip.3.desc": "مسرع خطي عالي الدقة موجه بالصور مع تقنية هايبر آrc. يقدم علاجاً سريعاً ودقيقاً لمجموعة واسعة من السرطانات.", "equip.3.tag1": "موجه بالصور", "equip.3.tag2": "هايبر آrc", "equip.3.tag3": "تطبيق متعدد",
+                    "equip.4.name": "هايبر آrc", "equip.4.subtitle": "تقنية SRS داخل الجمجمة", "equip.4.desc": "تقنية جراحة إشعاعية مجسمية غير مستوية خصيصاً للأورام داخل الجمجمة. دقة دون المليمتر تعالج انتقالات الدماغ المتعددة في 10 دقائق.", "equip.4.tag1": "انتقالات الدماغ", "equip.4.tag2": "غير مستوٍ", "equip.4.tag3": "علاج 10 دقائق",
+                    "equip.5.name": "هالسيون", "equip.5.subtitle": "نظام فاريان هالسيون", "equip.5.desc": "أول مسرع طبي في العالم مع توجيه 100% بالصور. رقمي بالكامل، مدعوم بالذكاء الاصطناعي، جلسات علاج كاملة في 6 دقائق.", "equip.5.tag1": "توجيه 100% بالصور", "equip.5.tag2": "جلسات 6 دقائق", "equip.5.tag3": "مدعوم بالذكاء الاصطناعي",
+                    "equip.6.name": "إيثوس", "equip.6.subtitle": "علاج إشعاعي تكيفي بالذكاء الاصطناعي", "equip.6.desc": "أول منصة علاج إشعاعي تكيفي عبر الإنترنت في العالم. تكيف بالذكاء الاصطناعي في الوقت الفعلي للتغيرات التشريحية اليومية.", "equip.6.tag1": "تكيفي بالذكاء الاصطناعي", "equip.6.tag2": "تكيف يومي", "equip.6.tag3": "سرطانات الحوض",
+                    "equip.7.name": "العلاج الباطن", "equip.7.subtitle": "جاما ميد بلس IX HDR", "equip.7.desc": "جهاز تفريغ عالي المعدل للإشعاع الداخلي الدقيق. يوصل المصادر المشعة مباشرة إلى مواقع الورم. أوقات علاج قصيرة، إجراءات خارجية، سلامة عالية.", "equip.7.tag1": "إشعاع داخلي", "equip.7.tag2": "معدل جرعة عالي", "equip.7.tag3": "عنق الرحم والبروستاتا",
+                    "equip.8.name": "محاكاة MRI + CT", "equip.8.subtitle": "MRI 4D وCT ثنائي الطاقة", "equip.8.desc": "MRI 3.0T سيمنز مع إدراك الحركة، بوابة التنفس MRI 4D، وCT ثنائي الطاقة فتحة كبيرة. تصوير تكيفي في الوقت الفعلي لتتبع الورم الدقيق.", "equip.8.tag1": "MRI 4D", "equip.8.tag2": "تتبع الحركة", "equip.8.tag3": "في الوقت الفعلي",
+                    "mdt.tag": "نهج الفريق", "mdt.title": "نموذج الفريق متعدد التخصصات (MDT)", "mdt.subtitle": "يجمع فريق MDT لدينا خبراء من تخصصات متعددة لإنشاء أكثر خطة علاج فعالة ومخصصة لكل مريض.",
+                    "mdt.item1.title": "علم الأورام الإشعاعي", "mdt.item1.text": "أخصائيو الأورام الإشعاعية الخبراء يستخدمون تقنيات متطورة بما في ذلك سايبر نايف وتروبيم وتومو ثيرابي للاستهداف الدقيق للورم.",
+                    "mdt.item2.title": "علم الأورام الطبي", "mdt.item2.text": "متخصصو العلاج الكيميائي والمناعي والمستهدف يقدمون حلول علاج جهازية.",
+                    "mdt.item3.title": "جراحة الأورام", "mdt.item3.text": "جراحون ذوو خبرة يستخدمون تقنيات الحد الأدنى من التدخل الجراحي والروبوتية لإزالة الورم.",
+                    "mdt.item4.title": "الطب الصيني التقليدي", "mdt.item4.text": "تكامل الطب الصيني التقليدي بما في ذلك الوخز بالإبر والأعشاب الطبية والتأهيل لتقليل الآثار الجانبية.",
+                    "mdt.item5.title": "العلاج التدخلي", "mdt.item5.text": "إجراءات الحد الأدنى من التدخل الجراحي بما في ذلك TACE وablatio بالتردد الراديوي وزرع الجسيمات.",
+                    "process.tag": "رحلتك", "process.title": "رحلة علاجك", "process.subtitle": "من استفسارك الأول إلى المتابعة بعد العلاج، نرشدك في كل خطوة على الطريق برعاية مخصصة ودعم.",
+                    "process.step1.title": "استشارة مجانية", "process.step1.desc": "شارك سجلاتك الطبية عبر واتساب. يقوم فريقنا بمراجعة حالتك وتقديم خطة علاج أولية.",
+                    "process.step2.title": "تخطيط السفر", "process.step2.desc": "نساعد في توجيه التأشيرة وتوصيات الرحلات وترتيبات الإقامة في المستشفى.",
+                    "process.step3.title": "الوصول والتشخيص", "process.step3.desc": "استقبال من المطار، تشخيص شامل، واستشارة MDT لإنهاء خطة علاجك المخصصة.",
+                    "process.step4.title": "العلاج", "process.step4.desc": "احصل على علاج إشعاعي عالمي المستوى مع مراقبة يومية وإدارة الآثار الجانبية ودعم مستمر.",
+                    "process.step5.title": "المتابعة", "process.step5.desc": "سجلات طبية كاملة بالإنجليزية، استشارات متابعة عن بعد، وتنسيق مع أطباء بلدك.",
+                    "testimonials.tag": "قصص المرضى", "testimonials.title": "ما يقوله مرضانا", "testimonials.subtitle": "قصص حقيقية من مرضى دوليين وجدوا الأمل والشفاء في مركزنا.",
+                    "testimonials.1.text": "بعد أن قيل لي إنني بحاجة للانتظار 6 أشهر للعلاج الإشعاعي في بلدي، أتيت إلى جينشا تشو. تم الانتهاء من علاج سايبر نايف في 3 جلسات فقط. تقلص الورم بشكل كبير. تقنية لا تصدق وفريق رائع.",
+                    "testimonials.2.text": "كانت التكلفة أقل بكثير من نصف ما كنت سأدفعه في بلدي، لكن التكنولوجيا كانت أكثر تقدماً. عالج نظام هالسيون سرطان بروستاتتي في 6 دقائق فقط لكل جلسة. كانت التجربة سلسة ومهنية.",
+                    "testimonials.3.text": "تم علاج انتقالات دماغي بتقنية هايبر آrc في جلسة واحدة مدتها 10 دقائق. كانت الدقة رائعة. نسق الفريق كل شيء من وصولي إلى المتابعة. أنا ممتن لهذه الفرصة الثانية في الحياة.",
+                    "contact.title": "مستعد لبدء رحلة شفائك؟", "contact.subtitle": "اتصل بنا اليوم للحصول على استشارة مجانية. سيرد عليك منسق المرضى الدوليين خلال 24 ساعة لمناقشة حالتك.",
+                    "contact.address": "العنوان", "contact.transport": "المواصلات", "contact.transportDetail": "خط المترو 6، محطة هينغشا، مخرج C (100 متر مشي)",
+                    "contact.ctaTitle": "احصل على استشارة مجانية", "contact.ctaText": "أرسل لنا سجلاتك الطبية وسنقدم تقييماً أولياً خلال 24 ساعة.", "contact.ctaButton": "تواصل عبر واتساب",
+                    "footer.brand": "مركز جينشا تشو للعلاج الإشعاعي", "footer.desc": "مستشفى جينشا تشو التابع لجامعة الطب الصيني في قوانغتشو - مستشفى حديث من الدرجة الثالثة أ يجمع بين العلاج والتعليم والبحث العلمي.",
+                    "footer.quickLinks": "روابط سريعة", "footer.services": "الخدمات", "footer.contact": "اتصل بنا",
+                    "footer.link.about": "من نحن", "footer.link.equipment": "التجهيزات", "footer.link.mdt": "فريق MDT", "footer.link.process": "عملية العلاج",
+                    "footer.link.stereotactic": "الجراحة الإشعاعية المجسمية", "footer.link.imrt": "IMRT / IGRT", "footer.link.brachytherapy": "العلاج الباطن", "footer.link.tcm": "تكامل الطب الصيني",
+                    "footer.address": "شارع ليتشوان الشرقي رقم 1، جينشا تشو، قوانغتشو", "footer.metro": "خط المترو 6، محطة هينغشا",
+                    "footer.copyright": " 2024 مستشفى جينشا تشو التابع لجامعة الطب الصيني في قوانغتشو. جميع الحقوق محفوظة."
+                },
+                es: {
+                    "logo": "Centro de Radioterapia Jinshazhou",
+                    "nav.about": "Sobre Nosotros", "nav.equipment": "Equipamiento", "nav.mdt": "Equipo MDT", "nav.process": "Proceso", "nav.contact": "Contacto",
+                    "hero.title": "Tratamiento Oncológico de Clase Mundial\n<span>Sin Salir de su País</span>",
+                    "hero.subtitle": "Experimente la tecnología de radioterapia de vanguardia en el Hospital Jinshazhou de la Universidad de Medicina China de Guangzhou. Nuestro Centro de Oncología Radioterápica le brinda el tratamiento más avanzado contra el cáncer del mundo.",
+                    "hero.badge1": "CyberKnife M6", "hero.badge2": "TrueBeam", "hero.badge3": "TomoTherapy", "hero.badge4": "Halcyon",
+                    "hero.cta1": "Consulta Gratuita", "hero.cta2": "Explorar Tecnología",
+                    "hero.card1.number": "10+", "hero.card1.text": "Sistemas Avanzados de Radioterapia",
+                    "hero.card2.number": "370+", "hero.card2.text": "Profesionales Médicos",
+                    "stats.1.number": "10+", "stats.1.label": "Sistemas de Radioterapia de Clase Mundial",
+                    "stats.2.number": "1,500", "stats.2.label": "Camas Hospitalarias",
+                    "stats.3.number": "48", "stats.3.label": "Camas UCI",
+                    "stats.4.number": "50-70%", "stats.4.label": "Ahorro de Costos vs. Países Occidentales",
+                    "why.tag": "Por Qué Elegirnos", "why.title": "Por Qué los Pacientes Internacionales Eligen Nuestro Centro", "why.subtitle": "Combinamos tecnología líder mundial con atención compasiva, brindando una experiencia de tratamiento integral que rivaliza con las mejores instituciones del mundo.",
+                    "why.card1.title": "Tecnología de Vanguardia", "why.card1.text": "Primer CyberKnife M6 con IA en China, TrueBeam, TomoTherapy, Halcyon y plataforma Ethos de radioterapia adaptativa.",
+                    "why.card2.title": "Equipo MDT", "why.card2.text": "Equipo multidisciplinario que incluye oncología médica, radioterapia, cirugía, terapia intervencionista y medicina tradicional china.",
+                    "why.card3.title": "Excelencia Asequible", "why.card3.text": "Reciba tratamiento de clase mundial a una fracción del costo comparado con EE.UU., Reino Unido u otros países occidentales.",
+                    "why.card4.title": "Sin Listas de Espera", "why.card4.text": "Acceso inmediato a diagnósticos y tratamiento. Citas disponibles en la misma semana para la mayoría de los procedimientos.",
+                    "why.card5.title": "Soporte Lingüístico Completo", "why.card5.text": "Intérpretes médicos profesionales y personal bilingüe para garantizar una comunicación clara durante todo su viaje.",
+                    "why.card6.title": "Integración MTC", "why.card6.text": "Integración única de radioterapia moderna con medicina tradicional china para recuperación holística y mejores resultados.",
+                    "equipment.tag": "Nuestra Tecnología", "equipment.title": "Equipamiento de Radioterapia de Clase Mundial", "equipment.subtitle": "Nuestro centro ha invertido en los sistemas de radioterapia más avanzados del mundo, garantizando precisión, seguridad y resultados óptimos para cada paciente.",
+                    "equip.1.name": "CyberKnife M6", "equip.1.subtitle": "Accuray CyberKnife M6", "equip.1.desc": "Sistema de cirugía radiocirugía robótica de sexta generación con inteligencia artificial y seguimiento de tumores en tiempo real. Trata tumores en cualquier parte del cuerpo con precisión submilimétrica en 1-5 sesiones.", "equip.1.tag1": "Cirugía Radiocirugía Robótica", "equip.1.tag2": "Seguimiento en Tiempo Real", "equip.1.tag3": "Tumores Cerebrales y Corporales",
+                    "equip.2.name": "TomoTherapy", "equip.2.subtitle": "Accuray Helical TomoTherapy", "equip.2.desc": "Integra IMRT, IGRT y DGRT en un solo sistema. Entrega helicoidal de 360 grados con precisión de ±0.1 mm, ideal para tumores complejos y múltiples.", "equip.2.tag1": "Entrega Helicoidal 360°", "equip.2.tag2": "Precisión ±0.1mm", "equip.2.tag3": "Tumores Complejos",
+                    "equip.3.name": "TrueBeam", "equip.3.subtitle": "Varian TrueBeam", "equip.3.desc": "Acelerador lineal de alta precisión guiado por imágenes con tecnología HyperArc. Ofrece tratamiento rápido y preciso para una amplia gama de cánceres.", "equip.3.tag1": "Guiado por Imágenes", "equip.3.tag2": "HyperArc", "equip.3.tag3": "Aplicación Versátil",
+                    "equip.4.name": "HyperArc", "equip.4.subtitle": "Tecnología SRS Intracraneal", "equip.4.desc": "Tecnología de radiocirugía estereotáxica no coplanar específicamente para tumores intracraneales. Precisión submilimétrica que trata múltiples metástasis cerebrales en 10 minutos.", "equip.4.tag1": "Metástasis Cerebrales", "equip.4.tag2": "No Coplanar", "equip.4.tag3": "Tratamiento de 10 Min",
+                    "equip.5.name": "Halcyon", "equip.5.subtitle": "Sistema Varian Halcyon", "equip.5.desc": "Primer acelerador médico del mundo con orientación 100% por imágenes. Completamente digitalizado, con IA, sesiones de tratamiento completas en 6 minutos.", "equip.5.tag1": "Orientación 100% Imágenes", "equip.5.tag2": "Sesiones de 6 Min", "equip.5.tag3": "Potenciado por IA",
+                    "equip.6.name": "Ethos", "equip.6.subtitle": "Radioterapia Adaptativa con IA", "equip.6.desc": "Primera plataforma de radioterapia adaptativa en línea del mundo. Adaptación con IA en tiempo real a cambios anatómicos diarios. Tratamiento personalizado cada sesión.", "equip.6.tag1": "Adaptativa con IA", "equip.6.tag2": "Adaptación Diaria", "equip.6.tag3": "Cánceres Pélvicos",
+                    "equip.7.name": "Braquiterapia", "equip.7.subtitle": "GammaMedplus IX HDR", "equip.7.desc": "Dispositivo de alta tasa de dosis para radiación interna precisa. Entrega fuentes radiactivas directamente a sitios tumorales. Tiempos de tratamiento cortos, procedimientos ambulatorios.", "equip.7.tag1": "Radiación Interna", "equip.7.tag2": "Alta Tasa de Dosis", "equip.7.tag3": "Cérvix y Próstata",
+                    "equip.8.name": "Simulación MRI + CT", "equip.8.subtitle": "MRI 4D y CT de Doble Energía", "equip.8.desc": "MRI Siemens 3.0T con percepción de movimiento, puerta de respiración MRI 4D y CT de doble energía. Imagen adaptativa en tiempo real para seguimiento preciso de tumores.", "equip.8.tag1": "MRI 4D", "equip.8.tag2": "Seguimiento de Movimiento", "equip.8.tag3": "En Tiempo Real",
+                    "mdt.tag": "Enfoque de Equipo", "mdt.title": "Modelo de Equipo Multidisciplinario (MDT)", "mdt.subtitle": "Nuestro MDT reúne expertos de múltiples disciplinas para crear el plan de tratamiento más efectivo y personalizado para cada paciente.",
+                    "mdt.item1.title": "Oncología Radioterápica", "mdt.item1.text": "Oncólogos radioterapeutas expertos que utilizan tecnología de vanguardia incluyendo CyberKnife, TrueBeam y TomoTherapy para tratamiento dirigido preciso.",
+                    "mdt.item2.title": "Oncología Médica", "mdt.item2.text": "Especialistas en quimioterapia, inmunoterapia y terapia dirigida que brindan soluciones de tratamiento sistémico.",
+                    "mdt.item3.title": "Cirugía Oncológica", "mdt.item3.text": "Cirujanos experimentados que utilizan técnicas mínimamente invasivas y robóticas para la extirpación de tumores.",
+                    "mdt.item4.title": "Medicina Tradicional China", "mdt.item4.text": "Integración de MTC incluyendo acupuntura, medicina herbal y rehabilitación para reducir efectos secundarios y mejorar la recuperación.",
+                    "mdt.item5.title": "Terapia Intervencionista", "mdt.item5.text": "Procedimientos mínimamente invasivos incluyendo TACE, ablación por radiofrecuencia e implantación de partículas.",
+                    "process.tag": "Su Viaje", "process.title": "Su Viaje de Tratamiento", "process.subtitle": "Desde su primera consulta hasta el seguimiento post-tratamiento, lo guiamos en cada paso con atención personalizada y apoyo.",
+                    "process.step1.title": "Consulta Gratuita", "process.step1.desc": "Comparta sus registros médicos a través de WhatsApp. Nuestro equipo revisa su caso y proporciona un plan de tratamiento preliminar.",
+                    "process.step2.title": "Planificación de Viaje", "process.step2.desc": "Le asistimos con orientación de visa, recomendaciones de vuelos y arreglos de alojamiento hospitalario.",
+                    "process.step3.title": "Llegada y Diagnóstico", "process.step3.desc": "Recogida en el aeropuerto, diagnósticos integrales y consulta MDT para finalizar su plan de tratamiento personalizado.",
+                    "process.step4.title": "Tratamiento", "process.step4.desc": "Reciba radioterapia de clase mundial con monitoreo diario, gestión de efectos secundarios y apoyo continuo.",
+                    "process.step5.title": "Seguimiento", "process.step5.desc": "Registros médicos completos en inglés, consultas de seguimiento remotas y coordinación con sus médicos de origen.",
+                    "testimonials.tag": "Historias de Pacientes", "testimonials.title": "Lo Que Dicen Nuestros Pacientes", "testimonials.subtitle": "Historias reales de pacientes internacionales que encontraron esperanza y curación en nuestro centro.",
+                    "testimonials.1.text": "Después de que me dijeron que necesitaba esperar 6 meses para radioterapia en mi país, vine a Jinshazhou. El tratamiento con CyberKnife se completó en solo 3 sesiones. El tumor se redujo significativamente. Tecnología increíble y personal atento.",
+                    "testimonials.2.text": "El costo fue menos de la mitad de lo que habría pagado en mi país, pero la tecnología era aún más avanzada. El sistema Halcyon trató mi cáncer de próstata en solo 6 minutos por sesión. Toda la experiencia fue fluida y profesional.",
+                    "testimonials.3.text": "Mis metástasis cerebrales fueron tratadas con tecnología HyperArc en una sola sesión de 10 minutos. La precisión fue notable. El equipo coordinó todo desde mi llegada hasta el seguimiento. Estoy agradecido por esta segunda oportunidad en la vida.",
+                    "contact.title": "¿Listo para Comenzar su Viaje de Sanación?", "contact.subtitle": "Contáctenos hoy para una consulta gratuita. Nuestro coordinador de pacientes internacionales responderá dentro de 24 horas para discutir su caso.",
+                    "contact.address": "Dirección", "contact.transport": "Transporte", "contact.transportDetail": "Línea de Metro 6, Estación Hengsha, Salida C (caminar 100m)",
+                    "contact.ctaTitle": "Obtener Consulta Gratuita", "contact.ctaText": "Envíenos sus registros médicos y le proporcionaremos una evaluación preliminar en 24 horas.", "contact.ctaButton": "Contactar por WhatsApp",
+                    "footer.brand": "Centro de Radioterapia Oncológica Jinshazhou", "footer.desc": "Hospital Jinshazhou de la Universidad de Medicina China de Guangzhou - Un hospital moderno de tercer nivel grado A que integra tratamiento médico, enseñanza, investigación científica y atención preventiva.",
+                    "footer.quickLinks": "Enlaces Rápidos", "footer.services": "Servicios", "footer.contact": "Contacto",
+                    "footer.link.about": "Sobre Nosotros", "footer.link.equipment": "Equipamiento", "footer.link.mdt": "Equipo MDT", "footer.link.process": "Proceso de Tratamiento",
+                    "footer.link.stereotactic": "Radiocirugía Estereotáxica", "footer.link.imrt": "IMRT / IGRT", "footer.link.brachytherapy": "Braquiterapia", "footer.link.tcm": "Integración MTC",
+                    "footer.address": "Calle Lichuan Este No.1, Jinshazhou, Guangzhou", "footer.metro": "Línea de Metro 6, Estación Hengsha",
+                    "footer.copyright": " 2024 Hospital Jinshazhou de la Universidad de Medicina China de Guangzhou. Todos los derechos reservados."
+                },
+                fr: {
+                    "logo": "Centre de Radiothérapie Jinshazhou",
+                    "nav.about": "À Propos", "nav.equipment": "Équipement", "nav.mdt": "Équipe MDT", "nav.process": "Processus", "nav.contact": "Contact",
+                    "hero.title": "Traitement du Cancer de Classe Mondiale\n<span>Sans Quitter Votre Pays</span>",
+                    "hero.subtitle": "Découvrez la technologie de radiothérapie de pointe à l'Hôpital Jinshazhou de l'Université de Médecine Chinoise de Guangzhou. Notre Centre d'Oncologie Radiothérapique vous apporte le traitement du cancer le plus avancé au monde.",
+                    "hero.badge1": "CyberKnife M6", "hero.badge2": "TrueBeam", "hero.badge3": "TomoTherapy", "hero.badge4": "Halcyon",
+                    "hero.cta1": "Consultation Gratuite", "hero.cta2": "Explorer la Technologie",
+                    "hero.card1.number": "10+", "hero.card1.text": "Systèmes de Radiothérapie Avancés",
+                    "hero.card2.number": "370+", "hero.card2.text": "Professionnels de Santé",
+                    "stats.1.number": "10+", "stats.1.label": "Systèmes de Radiothérapie de Classe Mondiale",
+                    "stats.2.number": "1 500", "stats.2.label": "Lits d'Hôpital",
+                    "stats.3.number": "48", "stats.3.label": "Lits de Soins Intensifs",
+                    "stats.4.number": "50-70%", "stats.4.label": "Économies par Rapport aux Pays Occidentaux",
+                    "why.tag": "Pourquoi Nous Choisir", "why.title": "Pourquoi les Patients Internationaux Choisissent Notre Centre", "why.subtitle": "Nous combinons une technologie de pointe mondiale avec des soins attentionnés, offrant une expérience de traitement complet qui rivalise avec les meilleures institutions au monde.",
+                    "why.card1.title": "Technologie de Pointe", "why.card1.text": "Premier CyberKnife M6 avec IA en Chine, TrueBeam, TomoTherapy, Halcyon et plateforme Ethos de radiothérapie adaptative.",
+                    "why.card2.title": "Approche Équipe MDT", "why.card2.text": "Équipe multidisciplinaire incluant oncologie médicale, radiothérapie, chirurgie, thérapie interventionnelle et médecine traditionnelle chinoise.",
+                    "why.card3.title": "Excellence Abordable", "why.card3.text": "Recevez un traitement de classe mondiale pour une fraction du coût comparé aux États-Unis, Royaume-Uni ou autres pays occidentaux.",
+                    "why.card4.title": "Sans Listes d'Attente", "why.card4.text": "Accès immédiat au diagnostic et au traitement. Rendez-vous disponibles la même semaine pour la plupart des procédures.",
+                    "why.card5.title": "Support Linguistique Complet", "why.card5.text": "Interprètes médicaux professionnels et personnel bilingue pour assurer une communication claire tout au long de votre parcours.",
+                    "why.card6.title": "Intégration MTC", "why.card6.text": "Intégration unique de radiothérapie moderne et de médecine traditionnelle chinoise pour une récupération holistique et de meilleurs résultats.",
+                    "equipment.tag": "Notre Technologie", "equipment.title": "Équipement de Radiothérapie de Classe Mondiale", "equipment.subtitle": "Notre centre a investi dans les systèmes de radiothérapie les plus avancés au monde, garantissant précision, sécurité et résultats optimaux pour chaque patient.",
+                    "equip.1.name": "CyberKnife M6", "equip.1.subtitle": "Accuray CyberKnife M6", "equip.1.desc": "Système de radiochirurgie robotique de sixième génération alimenté par IA avec suivi de tumeur en temps réel. Traite les tumeurs n'importe où dans le corps avec une précision submillimétrique en 1 à 5 séances.", "equip.1.tag1": "Radiochirurgie Robotique", "equip.1.tag2": "Suivi en Temps Réel", "equip.1.tag3": "Tumeurs Cérébrales et Corporelles",
+                    "equip.2.name": "TomoTherapy", "equip.2.subtitle": "Accuray Helical TomoTherapy", "equip.2.desc": "Intègre IMRT, IGRT et DGRT en un seul système. Livraison hélicoïdale à 360 degrés avec une précision de ±0,1 mm, idéale pour les tumeurs complexes et multiples.", "equip.2.tag1": "Livraison Hélicoïdale 360°", "equip.2.tag2": "Précision ±0,1 mm", "equip.2.tag3": "Tumeurs Complexes",
+                    "equip.3.name": "TrueBeam", "equip.3.subtitle": "Varian TrueBeam", "equip.3.desc": "Accélérateur linéaire à haute précision guidé par imagerie avec technologie HyperArc. Offre un traitement rapide et précis pour une large gamme de cancers.", "equip.3.tag1": "Guidé par Imagerie", "equip.3.tag2": "HyperArc", "equip.3.tag3": "Application Polyvalente",
+                    "equip.4.name": "HyperArc", "equip.4.subtitle": "Technologie SRS Intracrânienne", "equip.4.desc": "Technologie de radiochirurgie stéréotaxique non coplanaire spécifiquement pour les tumeurs intracrâniennes. Précision submillimétrique traitant plusieurs métastases cérébrales en 10 minutes.", "equip.4.tag1": "Métastases Cérébrales", "equip.4.tag2": "Non Coplanaire", "equip.4.tag3": "Traitement 10 Min",
+                    "equip.5.name": "Halcyon", "equip.5.subtitle": "Système Varian Halcyon", "equip.5.desc": "Premier accélérateur médical au monde avec guidage 100% par imagerie. Entièrement digitalisé, alimenté par IA, séances de traitement complètes en 6 minutes.", "equip.5.tag1": "Guidage 100% Imagerie", "equip.5.tag2": "Séances 6 Min", "equip.5.tag3": "Alimenté par IA",
+                    "equip.6.name": "Ethos", "equip.6.subtitle": "Radiothérapie Adaptative par IA", "equip.6.desc": "Première plateforme mondiale de radiothérapie adaptative en ligne. Adaptation par IA en temps réel aux changements anatomiques quotidiens. Traitement personnalisé à chaque séance.", "equip.6.tag1": "Adaptative par IA", "equip.6.tag2": "Adaptation Quotidienne", "equip.6.tag3": "Cancers Pelviens",
+                    "equip.7.name": "Curiethérapie", "equip.7.subtitle": "GammaMedplus IX HDR", "equip.7.desc": "Dispositif de haute dose pour radiothérapie interne précise. Livre des sources radioactives directement aux sites tumoraux. Temps de traitement courts, procédures ambulatoires.", "equip.7.tag1": "Radiation Interne", "equip.7.tag2": "Haute Dose", "equip.7.tag3": "Cervix et Prostate",
+                    "equip.8.name": "Simulation IRM + CT", "equip.8.subtitle": "IRM 4D et CT à Double Énergie", "equip.8.desc": "IRM Siemens 3.0T avec perception du mouvement, porte de respiration IRM 4D et CT à double énergie. Imagerie adaptative en temps réel pour le suivi précis des tumeurs.", "equip.8.tag1": "IRM 4D", "equip.8.tag2": "Suivi du Mouvement", "equip.8.tag3": "En Temps Réel",
+                    "mdt.tag": "Approche Équipe", "mdt.title": "Modèle d'Équipe Multidisciplinaire (MDT)", "mdt.subtitle": "Notre MDT réunit des experts de multiples disciplines pour créer le plan de traitement le plus efficace et personnalisé pour chaque patient.",
+                    "mdt.item1.title": "Oncologie Radiothérapique", "mdt.item1.text": "Oncologues radiothérapeutes experts utilisant une technologie de pointe incluant CyberKnife, TrueBeam et TomoTherapy pour un ciblage précis des tumeurs.",
+                    "mdt.item2.title": "Oncologie Médicale", "mdt.item2.text": "Spécialistes en chimiothérapie, immunothérapie et thérapie ciblée fournissant des solutions de traitement systémique.",
+                    "mdt.item3.title": "Chirurgie Oncologique", "mdt.item3.text": "Chirurgiens expérimentés utilisant des techniques mini-invasives et robotiques pour l'ablation des tumeurs.",
+                    "mdt.item4.title": "Médecine Traditionnelle Chinoise", "mdt.item4.text": "Intégration de MTC incluant acupuncture, phytothérapie et rééducation pour réduire les effets secondaires et améliorer la récupération.",
+                    "mdt.item5.title": "Thérapie Interventionnelle", "mdt.item5.text": "Procédures mini-invasives incluant TACE, ablation par radiofréquence et implantation de particules.",
+                    "process.tag": "Votre Parcours", "process.title": "Votre Parcours de Traitement", "process.subtitle": "De votre première consultation au suivi post-traitement, nous vous guidons à chaque étape avec des soins personnalisés et un soutien.",
+                    "process.step1.title": "Consultation Gratuite", "process.step1.desc": "Partagez vos dossiers médicaux via WhatsApp. Notre équipe examine votre cas et fournit un plan de traitement préliminaire.",
+                    "process.step2.title": "Planification du Voyage", "process.step2.desc": "Nous vous assistons pour les conseils de visa, les recommandations de vols et les arrangements d'hébergement à l'hôpital.",
+                    "process.step3.title": "Arrivée et Diagnostic", "process.step3.desc": "Prise en charge à l'aéroport, diagnostics complets et consultation MDT pour finaliser votre plan de traitement personnalisé.",
+                    "process.step4.title": "Traitement", "process.step4.desc": "Recevez une radiothérapie de classe mondiale avec surveillance quotidienne, gestion des effets secondaires et soutien continu.",
+                    "process.step5.title": "Suivi", "process.step5.desc": "Dossiers médicaux complets en anglais, consultations de suivi à distance et coordination avec vos médecins d'origine.",
+                    "testimonials.tag": "Témoignages", "testimonials.title": "Ce Que Disent Nos Patients", "testimonials.subtitle": "Histoires réelles de patients internationaux ayant trouvé espoir et guérison dans notre centre.",
+                    "testimonials.1.text": "Après avoir été informé que je devais attendre 6 mois pour la radiothérapie dans mon pays, je suis venu à Jinshazhou. Le traitement CyberKnife a été complété en seulement 3 séances. La tumeur a significativement rétréci. Technologie incroyable et personnel attentionné.",
+                    "testimonials.2.text": "Le coût était inférieur à la moitié de ce que j'aurais payé chez moi, mais la technologie était encore plus avancée. Le système Halcyon a traité mon cancer de la prostate en seulement 6 minutes par séance. Toute l'expérience a été fluide et professionnelle.",
+                    "testimonials.3.text": "Mes métastases cérébrales ont été traitées avec la technologie HyperArc en une seule séance de 10 minutes. La précision était remarquable. L'équipe a coordonné tout depuis mon arrivée jusqu'au suivi. Je suis reconnaissant pour cette seconde chance dans la vie.",
+                    "contact.title": "Prêt à Commencer Votre Parcours de Guérison ?", "contact.subtitle": "Contactez-nous aujourd'hui pour une consultation gratuite. Notre coordinateur de patients internationaux répondra dans les 24 heures pour discuter de votre cas.",
+                    "contact.address": "Adresse", "contact.transport": "Transport", "contact.transportDetail": "Ligne de Métro 6, Station Hengsha, Sortie C (marche 100m)",
+                    "contact.ctaTitle": "Obtenir une Consultation Gratuite", "contact.ctaText": "Envoyez-nous vos dossiers médicaux et nous vous fournirons une évaluation préliminaire dans les 24 heures.", "contact.ctaButton": "Contacter sur WhatsApp",
+                    "footer.brand": "Centre de Radiothérapie Oncologique Jinshazhou", "footer.desc": "Hôpital Jinshazhou de l'Université de Médecine Chinoise de Guangzhou - Un hôpital moderne de troisième niveau grade A intégrant traitement médical, enseignement, recherche scientifique et soins préventifs.",
+                    "footer.quickLinks": "Liens Rapides", "footer.services": "Services", "footer.contact": "Contact",
+                    "footer.link.about": "À Propos", "footer.link.equipment": "Équipement", "footer.link.mdt": "Équipe MDT", "footer.link.process": "Processus de Traitement",
+                    "footer.link.stereotactic": "Radiochirurgie Stéréotaxique", "footer.link.imrt": "IMRT / IGRT", "footer.link.brachytherapy": "Curiethérapie", "footer.link.tcm": "Intégration MTC",
+                    "footer.address": "Rue Lichuan Est No.1, Jinshazhou, Guangzhou", "footer.metro": "Ligne de Métro 6, Station Hengsha",
+                    "footer.copyright": " 2024 Hôpital Jinshazhou de l'Université de Médecine Chinoise de Guangzhou. Tous droits réservés."
+                },
+                ru: {
+                    "logo": "Радиотерапевтический Центр Цзиньшачжоу",
+                    "nav.about": "О Нас", "nav.equipment": "Оборудование", "nav.mdt": "МРД Команда", "nav.process": "Процесс", "nav.contact": "Контакты",
+                    "hero.title": "Лечение Рака Мирового Уровня\n<span>Не Покидая Свою Страну</span>",
+                    "hero.subtitle": "Испытайте передовую технологию лучевой терапии в Больнице Цзиньшачжоу при Университете Китайской Медицины Гуанчжоу. Наш Онкологический Радиотерапевтический Центр предлагает самое передовое лечение рака в мире.",
+                    "hero.badge1": "КиберНож M6", "hero.badge2": "TrueBeam", "hero.badge3": "ТомоТерапия", "hero.badge4": "Halcyon",
+                    "hero.cta1": "Бесплатная Консультация", "hero.cta2": "Исследовать Технологии",
+                    "hero.card1.number": "10+", "hero.card1.text": "Передовые Системы Лучевой Терапии",
+                    "hero.card2.number": "370+", "hero.card2.text": "Медицинских Специалистов",
+                    "stats.1.number": "10+", "stats.1.label": "Системы Лучевой Терапии Мирового Уровня",
+                    "stats.2.number": "1 500", "stats.2.label": "Больничных Коек",
+                    "stats.3.number": "48", "stats.3.label": "Коек ОРИТ",
+                    "stats.4.number": "50-70%", "stats.4.label": "Экономия по Сравнению со Западными Странами",
+                    "why.tag": "Почему Мы", "why.title": "Почему Международные Пациенты Выбирают Наш Центр", "why.subtitle": "Мы сочетаем ведущие мировые технологии с заботливым уходом, обеспечивая комплексный опыт лечения, не уступающий лучшим учреждениям мира.",
+                    "why.card1.title": "Передовые Технологии", "why.card1.text": "Первый в Китае КиберНож M6 с ИИ, TrueBeam, ТомоТерапия, Halcyon и адаптивная платформа Ethos.",
+                    "why.card2.title": "Мультидисциплинарная Команда", "why.card2.text": "Мультидисциплинарная команда, включающая медицинскую онкологию, радиотерапию, хирургию, интервенционную терапию и традиционную китайскую медицину.",
+                    "why.card3.title": "Доступное Превосходство", "why.card3.text": "Получите лечение мирового уровня за часть стоимости по сравнению с США, Великобританией или другими западными странами.",
+                    "why.card4.title": "Без Очередей", "why.card4.text": "Немедленный доступ к диагностике и лечению. Запись на той же неделе для большинства процедур.",
+                    "why.card5.title": "Полная Языковая Поддержка", "why.card5.text": "Профессиональные медицинские переводчики и двуязычный персонал для обеспечения четкой коммуникации на протяжении всего пути.",
+                    "why.card6.title": "Интеграция ТКМ", "why.card6.text": "Уникальная интеграция современной лучевой терапии с традиционной китайской медициной для целостного восстановления и лучших результатов.",
+                    "equipment.tag": "Наши Технологии", "equipment.title": "Ведущее в Мире Оборудование для Лучевой Терапии", "equipment.subtitle": "Наш центр инвестировал в самые передовые системы лучевой терапии в мире, обеспечивая точность, безопасность и оптимальные результаты лечения для каждого пациента.",
+                    "equip.1.name": "КиберНож M6", "equip.1.subtitle": "Accuray CyberKnife M6", "equip.1.desc": "Радиохирургическая роботизированная система шестого поколения с ИИ и отслеживанием опухолей в реальном времени. Лечит опухоли в любой части тела с субмиллиметровой точностью за 1-5 сеансов.", "equip.1.tag1": "Радиохирургия Робот", "equip.1.tag2": "Отслеживание в Реальном Времени", "equip.1.tag3": "Опухоли Мозга и Тела",
+                    "equip.2.name": "ТомоТерапия", "equip.2.subtitle": "Accuray Helical TomoTherapy", "equip.2.desc": "Объединяет IMRT, IGRT и DGRT в одной системе. 360-градусная спиральная доставка с точностью ±0,1 мм, идеально для сложных и множественных опухолей.", "equip.2.tag1": "360° Спиральная Доставка", "equip.2.tag2": "Точность ±0,1 мм", "equip.2.tag3": "Сложные Опухоли",
+                    "equip.3.name": "TrueBeam", "equip.3.subtitle": "Varian TrueBeam", "equip.3.desc": "Линейный ускоритель высокой точности с наведением по изображениям и технологией HyperArc. Быстрое и точное лечение широкого спектра раков.", "equip.3.tag1": "Наведение по Изображениям", "equip.3.tag2": "HyperArc", "equip.3.tag3": "Универсальное Применение",
+                    "equip.4.name": "HyperArc", "equip.4.subtitle": "Внутричерепная Технология СРТ", "equip.4.desc": "Некопланарная стереотаксическая радиохирургия специально для внутричерепных опухолей. Субмиллиметровая точность, лечение нескольких метастазов мозга за 10 минут.", "equip.4.tag1": "Метастазы Мозга", "equip.4.tag2": "Некопланарная", "equip.4.tag3": "Лечение 10 Мин",
+                    "equip.5.name": "Halcyon", "equip.5.subtitle": "Система Varian Halcyon", "equip.5.desc": "Первый в мире медицинский ускоритель с 100% наведением по изображениям. Полностью цифровой, с ИИ, полные сеансы лечения за 6 минут.", "equip.5.tag1": "100% Наведение по Изображениям", "equip.5.tag2": "Сеансы 6 Мин", "equip.5.tag3": "С ИИ",
+                    "equip.6.name": "Ethos", "equip.6.subtitle": "Адаптивная Лучевая Терапия с ИИ", "equip.6.desc": "Первая в мире онлайн-платформа адаптивной лучевой терапии. Адаптация ИИ в реальном времени к ежедневным анатомическим изменениям. Персонализированное лечение каждый сеанс.", "equip.6.tag1": "Адаптивная с ИИ", "equip.6.tag2": "Ежедневная Адаптация", "equip.6.tag3": "Тазовые Раки",
+                    "equip.7.name": "Брахитерапия", "equip.7.subtitle": "GammaMedplus IX HDR", "equip.7.desc": "Высокоактивный аппликатор для точного внутреннего облучения. Доставляет радиоактивные источники прямо к опухолям. Короткое время лечения, амбулаторные процедуры.", "equip.7.tag1": "Внутреннее Облучение", "equip.7.tag2": "Высокая Доза", "equip.7.tag3": "Шейка Матки и Простата",
+                    "equip.8.name": "Моделирование МРТ + КТ", "equip.8.subtitle": "4D МРТ и Двухэнергетическая КТ", "equip.8.desc": "МРТ Siemens 3.0T с восприятием движения, 4D МРТ дыхательный гейтинг и двухэнергетическая КТ. Адаптивная визуализация в реальном времени для точного отслеживания опухолей.", "equip.8.tag1": "4D МРТ", "equip.8.tag2": "Отслеживание Движения", "equip.8.tag3": "В Реальном Времени",
+                    "mdt.tag": "Командный Подход", "mdt.title": "Модель Мультидисциплинарной Команды (МРД)", "mdt.subtitle": "Наша МРД объединяет экспертов из множества дисциплин для создания наиболее эффективного и персонализированного плана лечения для каждого пациента.",
+                    "mdt.item1.title": "Радиационная Онкология", "mdt.item1.text": "Экспертные радиационные онкологи, использующие передовые технологии, включая КиберНож, TrueBeam и ТомоТерапию для точного таргетирования опухолей.",
+                    "mdt.item2.title": "Медицинская Онкология", "mdt.item2.text": "Специалисты по химиотерапии, иммунотерапии и таргетной терапии, предоставляющие системные решения лечения.",
+                    "mdt.item3.title": "Хирургическая Онкология", "mdt.item3.text": "Опытные хирурги, использующие малоинвазивные и роботизированные техники для удаления опухолей.",
+                    "mdt.item4.title": "Традиционная Китайская Медицина", "mdt.item4.text": "Интеграция ТКМ, включая иглоукалывание, фитотерапию и реабилитацию, для снижения побочных эффектов и улучшения восстановления.",
+                    "mdt.item5.title": "Интервенционная Терапия", "mdt.item5.text": "Малоинвазивные процедуры, включая ТАСЕ, радиочастотную абляцию и имплантацию частиц.",
+                    "process.tag": "Ваше Путешествие", "process.title": "Ваше Путешествие Лечения", "process.subtitle": "От первой консультации до послетерапевтического наблюдения мы сопровождаем вас на каждом шагу с персонализированным уходом и поддержкой.",
+                    "process.step1.title": "Бесплатная Консультация", "process.step1.desc": "Поделитесь своими медицинскими записями через WhatsApp. Наша команда рассмотрит ваш случай и предоставит предварительный план лечения.",
+                    "process.step2.title": "Планирование Поездки", "process.step2.desc": "Мы помогаем с консультациями по визам, рекомендациями по рейсам и организацией проживания в больнице.",
+                    "process.step3.title": "Прибытие и Диагностика", "process.step3.desc": "Встреча в аэропорту, комплексная диагностика и консультация МРД для финализации вашего персонализированного плана лечения.",
+                    "process.step4.title": "Лечение", "process.step4.desc": "Получите лучевую терапию мирового уровня с ежедневным мониторингом, управлением побочными эффектами и непрерывной поддержкой.",
+                    "process.step5.title": "Наблюдение", "process.step5.desc": "Полные медицинские записи на английском, удаленные консультации наблюдения и координация с вашими врачами на родине.",
+                    "testimonials.tag": "Истории Пациентов", "testimonials.title": "Что Говорят Наши Пациенты", "testimonials.subtitle": "Реальные истории международных пациентов, нашедших надежду и исцеление в нашем центре.",
+                    "testimonials.1.text": "После того как мне сказали, что мне нужно ждать 6 месяцев радиотерапии в моей стране, я приехал в Цзиньшачжоу. Лечение КиберНожом было завершено всего за 3 сеанса. Опухоль значительно уменьшилась. Невероятная технология и заботливая команда.",
+                    "testimonials.2.text": "Стоимость была меньше половины того, что я заплатил бы дома, но технология была еще более продвинутой. Система Halcyon лечила мой рак простаты всего за 6 минут за сеанс. Весь опыт был гладким и профессиональным.",
+                    "testimonials.3.text": "Мои метастазы мозга были вылечены технологией HyperArc за одну 10-минутную сессию. Точность была замечательной. Команда скоординировала все с момента моего прибытия до наблюдения. Я благодарен за этот второй шанс в жизни.",
+                    "contact.title": "Готовы Начать Свой Путь к Исцелению?", "contact.subtitle": "Свяжитесь с нами сегодня для бесплатной консультации. Наш координатор международных пациентов ответит в течение 24 часов для обсуждения вашего случая.",
+                    "contact.address": "Адрес", "contact.transport": "Транспорт", "contact.transportDetail": "Линия метро 6, станция Хэнша, выход C (идти 100 м)",
+                    "contact.ctaTitle": "Получить Бесплатную Консультацию", "contact.ctaText": "Отправьте нам свои медицинские записи, и мы предоставим предварительную оценку в течение 24 часов.", "contact.ctaButton": "Связаться через WhatsApp",
+                    "footer.brand": "Онкологический Радиотерапевтический Центр Цзиньшачжоу", "footer.desc": "Больница Цзиньшачжоу при Университете Китайской Медицины Гуанчжоу — Современная больница третьего уровня класса А, объединяющая медицинское лечение, обучение, научные исследования и профилактику.",
+                    "footer.quickLinks": "Быстрые Ссылки", "footer.services": "Услуги", "footer.contact": "Контакты",
+                    "footer.link.about": "О Нас", "footer.link.equipment": "Оборудование", "footer.link.mdt": "Команда МРД", "footer.link.process": "Процесс Лечения",
+                    "footer.link.stereotactic": "Стереотаксическая Радиохирургия", "footer.link.imrt": "IMRT / IGRT", "footer.link.brachytherapy": "Брахитерапия", "footer.link.tcm": "Интеграция ТКМ",
+                    "footer.address": "Ул. Личуан Восточная, д.1, Цзиньшачжоу, Гуанчжоу", "footer.metro": "Линия метро 6, станция Хэнша",
+                    "footer.copyright": " 2024 Больница Цзиньшачжоу при Университете Китайской Медицины Гуанчжоу. Все права защищены."
+                },
+                ja: {
+                    "logo": "金沙洲放射線治療センター",
+                    "nav.about": "当センターについて", "nav.equipment": "設備・技術", "nav.mdt": "多診療科", "nav.process": "治療の流れ", "nav.contact": "お問い合わせ",
+                    "hero.title": "世界レベルのがん治療\n<span>出国せずに受けられる</span>",
+                    "hero.subtitle": "広州中医薬大学金沙洲病院で最先端の放射線治療技術を体験してください。当院の腫瘍放射線治療センターは、世界最先端のがん治療をあなたに届けます。",
+                    "hero.badge1": "サイバーナイフ M6", "hero.badge2": "TrueBeam", "hero.badge3": "トモセラピー", "hero.badge4": "Halcyon",
+                    "hero.cta1": "無料相談", "hero.cta2": "技術を見る",
+                    "hero.card1.number": "10+", "hero.card1.text": "先進放射線治療システム",
+                    "hero.card2.number": "370+", "hero.card2.text": "医療専門家",
+                    "stats.1.number": "10+", "stats.1.label": "世界レベルの放射線治療システム",
+                    "stats.2.number": "1,500", "stats.2.label": "病院ベッド",
+                    "stats.3.number": "48", "stats.3.label": "ICUベッド",
+                    "stats.4.number": "50-70%", "stats.4.label": "欧米諸国と比較して費用削減",
+                    "why.tag": "選ばれる理由", "why.title": "国際患者が当センターを選ぶ理由", "why.subtitle": "世界をリードする技術と思いやりのあるケアを組み合わせ、世界最高の医療機関と比肩する総合的ながん治療体験を提供します。",
+                    "why.card1.title": "最先端技術", "why.card1.text": "中国初のAI搭載サイバーナイフM6、TrueBeam、トモセラピー、Halcyon、Ethos適応放射線治療プラットフォームを保有。",
+                    "why.card2.title": "多診療科チーム", "why.card2.text": "腫瘍内科、放射線治療科、外科、介入治療科、伝統中医学を含む多診療科チーム。",
+                    "why.card3.title": "手頃な価格で最高品質", "why.card3.text": "アメリカ、イギリスなど欧米諸国と比較して、ごくわずかな費用で世界レベルの治療を受けられます。",
+                    "why.card4.title": "待ち時間なし", "why.card4.text": "診断と治療への即時アクセス。ほとんどの処置で同日週に予約可能。",
+                    "why.card5.title": "完全言語サポート", "why.card5.text": "専門医療通訳者とバイリンガルスタッフが、あなたの治療の道のりで明確なコミュニケーションを確保します。",
+                    "why.card6.title": "中西医学統合", "why.card6.text": "現代放射線治療と伝統中医学の独自の統合により、総合的な回復とより良い治療成績を実現。",
+                    "equipment.tag": "当センターの技術", "equipment.title": "世界最先端の放射線治療設備", "equipment.subtitle": "当センターは世界で最も先進的な放射線治療システムに投資し、すべての患者に精度、安全性、最適な治療成績を保証します。",
+                    "equip.1.name": "サイバーナイフ M6", "equip.1.subtitle": "Accuray サイバーナイフ M6", "equip.1.desc": "第6世代AI搭載ロボット放射線外科システム。リアルタイム腫瘍追跡とマルチリーフコリメーター搭載。1〜5回の治療で全身の腫瘍をサブミリメートル精度で治療。", "equip.1.tag1": "ロボット放射線外科", "equip.1.tag2": "リアルタイム追跡", "equip.1.tag3": "脳・全身腫瘍",
+                    "equip.2.name": "トモセラピー", "equip.2.subtitle": "Accuray ヘリカルトモセラピー", "equip.2.desc": "IMRT、IGRT、DGRTを1つのシステムに統合。360度ヘリカル照射、±0.1mmの精度で、複雑で多発性の腫瘍に最適。", "equip.2.tag1": "360度ヘリカル照射", "equip.2.tag2": "±0.1mm精度", "equip.2.tag3": "複雑な腫瘍",
+                    "equip.3.name": "TrueBeam", "equip.3.subtitle": "Varian TrueBeam", "equip.3.desc": "HyperArc技術を搭載した高精度画像ガイドリニアック。肺、肝臓、前立腺、脳など幅広いがんに対して迅速・正確な治療を提供。", "equip.3.tag1": "画像ガイド", "equip.3.tag2": "HyperArc", "equip.3.tag3": "多用途",
+                    "equip.4.name": "HyperArc", "equip.4.subtitle": "脳内立体定位放射線治療技術", "equip.4.desc": "脳内腫瘍専用の非共面立体定位放射線治療技術。サブミリメートル精度で、10分以内に複数の脳転移を同時に治療。", "equip.4.tag1": "脳転移", "equip.4.tag2": "非共面照射", "equip.4.tag3": "10分治療",
+                    "equip.5.name": "Halcyon", "equip.5.subtitle": "Varian Halcyon システム", "equip.5.desc": "世界初の100%画像ガイド医療用加速器。完全デジタル化、AI搭載、6分で完全治療セッションを完了。高い患者快適性と静粛な運転。", "equip.5.tag1": "100%画像ガイド", "equip.5.tag2": "6分治療", "equip.5.tag3": "AI搭載",
+                    "equip.6.name": "Ethos", "equip.6.subtitle": "AI適応放射線治療", "equip.6.desc": "世界初のオンライン適応放射線治療プラットフォーム。AIが毎日の解剖学的変化にリアルタイムで適応。毎回の治療がパーソナライズド。", "equip.6.tag1": "AI適応", "equip.6.tag2": "毎日適応", "equip.6.tag3": "骨盤がん",
+                    "equip.7.name": "近接治療", "equip.7.subtitle": "GammaMedplus IX HDR", "equip.7.desc": "高線量率後装装置。放射性源を腫瘍部位に直接送達。治療時間短縮、外来治療可能、高い安全性と最小限の副作用。", "equip.7.tag1": "内部照射", "equip.7.tag2": "高線量率", "equip.7.tag3": "子宮頸がん・前立腺がん",
+                    "equip.8.name": "MRI+CTシミュレーション", "equip.8.subtitle": "4D MRIとデュアルエネルギーCT", "equip.8.desc": "シーメンス3.0T運動知覚MRI、4D MRI呼吸性ゲーティング、デュアルエネルギー大口径CT。リアルタイム適応画像で治療中の腫瘍を正確に追跡。", "equip.8.tag1": "4D MRI", "equip.8.tag2": "運動追跡", "equip.8.tag3": "リアルタイム",
+                    "mdt.tag": "チームアプローチ", "mdt.title": "多診療科チーム（MDT）モデル", "mdt.subtitle": "当院のMDTは複数の診療科の専門家を集め、各患者に最も効果的でパーソナライズドな治療計画を作成します。",
+                    "mdt.item1.title": "放射線腫瘍学", "mdt.item1.text": "サイバーナイフ、TrueBeam、トモセラピーなど最先端技術を用いて、専門の放射線腫瘍医が正確な腫瘍標的治療を行います。",
+                    "mdt.item2.title": "腫瘍内科", "mdt.item2.text": "化学療法、免疫療法、分子標的治療の専門医が全身性治療ソリューションを提供します。",
+                    "mdt.item3.title": "腫瘍外科", "mdt.item3.text": "熟練した外科医が、ミニマルインべーシブおよびロボット技術を用いて腫瘍の切除を行います。",
+                    "mdt.item4.title": "伝統中医学", "mdt.item4.text": "鍼灸、漢方薬、リハビリテーションを含む中医学統合により、副作用を軽減し回復を促進します。",
+                    "mdt.item5.title": "介入治療", "mdt.item5.text": "TACE、ラジオ波焼灼、粒子植入などのミニマルインべーシブ治療で、局所的かつ正確な治療を実現。",
+                    "process.tag": "あなたの旅", "process.title": "治療の流れ", "process.subtitle": "最初の問い合わせから治療後のフォローアップまで、パーソナライズドなケアとサポートであなたを各ステップで導きます。",
+                    "process.step1.title": "無料相談", "process.step1.desc": "WhatsAppでカルテを共有してください。当チームが症例を検討し、予備的な治療計画を提示します。",
+                    "process.step2.title": "渡航計画", "process.step2.desc": "ビザ案内、フライト推奨、病院宿泊手配をサポートします。",
+                    "process.step3.title": "到着・診断", "process.step3.desc": "空港送迎、総合診断、MDT診察で最終的なパーソナライズド治療計画を確定します。",
+                    "process.step4.title": "治療", "process.step4.desc": "世界レベルの放射線治療を受け、日常モニタリング、副作用管理、継続的サポートを受けます。",
+                    "process.step5.title": "フォローアップ", "process.step5.desc": "英語の完全な医療記録、遠隔フォローアップ診察、本国の医師との連携を行います。",
+                    "testimonials.tag": "患者の声", "testimonials.title": "患者の声", "testimonials.subtitle": "当センターで希望と治癒を見出した国際患者のリアルなストーリー。",
+                    "testimonials.1.text": "自国で放射線治療を6か月待たなければならないと言われ、金沙洲に来ました。サイバーナイフ治療はわずか3回で完了。腫瘍は著しく縮小しました。驚異的な技術と思いやりのあるスタッフです。",
+                    "testimonials.2.text": "費用は自国で支払うより半分以下でしたが、技術はさらに先進的でした。Halcyonシステムは前立腺がんを1回6分で治療しました。全体的な体験はスムーズでプロフェッショナルでした。",
+                    "testimonials.3.text": "脳転移はHyperArc技術で10分の1回のセッションで治療されました。精度は驚異的でした。到着からフォローアップまで、チームがすべてを調整してくれました。人生の再出発に感謝しています。",
+                    "contact.title": "治癒の旅を始める準備はできましたか？", "contact.subtitle": "本日無料相談にお問い合わせください。当院の国際患者コーディネーターが24時間以内に返信し、症例をご相談し、次のステップをご案内します。",
+                    "contact.address": "住所", "contact.transport": "アクセス", "contact.transportDetail": "地下鉄6号線・横沙駅・C出口（徒歩100m）",
+                    "contact.ctaTitle": "無料相談を受ける", "contact.ctaText": "カルテをお送りください。24時間以内に予備的な評価を提供します。", "contact.ctaButton": "WhatsAppで相談",
+                    "footer.brand": "金沙洲腫瘍放射線治療センター", "footer.desc": "広州中医薬大学金沙洲病院——医療、教育、科学研究、予防を統合した現代的三級甲等総合病院。",
+                    "footer.quickLinks": "クイックリンク", "footer.services": "サービス", "footer.contact": "お問い合わせ",
+                    "footer.link.about": "当センターについて", "footer.link.equipment": "設備・技術", "footer.link.mdt": "MDTチーム", "footer.link.process": "治療の流れ",
+                    "footer.link.stereotactic": "立体定位放射線治療", "footer.link.imrt": "IMRT / IGRT", "footer.link.brachytherapy": "近接治療", "footer.link.tcm": "中医学統合",
+                    "footer.address": "広州市白雲区金沙洲礼伝東街1号", "footer.metro": "地下鉄6号線・横沙駅",
+                    "footer.copyright": " 2024 広州中医薬大学金沙洲病院。全著作権所有。"
+                },
+                ko: {
+                    "logo": "진사저우 방사선치료센터",
+                    "nav.about": "소개", "nav.equipment": "장비・기술", "nav.mdt": "다학제팀", "nav.process": "치료과정", "nav.contact": "문의",
+                    "hero.title": "세계적 수준의 암 치료\n<span>국가를 떠나지 않고 받을 수 있습니다</span>",
+                    "hero.subtitle": "광저우 중의약대학 진사저우 병원에서 최첨단 방사선치료 기술을 경험하세요. 당사의 종양 방사선치료 센터는 세계에서 가장 진보된 암 치료를 제공합니다.",
+                    "hero.badge1": "사이버나이프 M6", "hero.badge2": "TrueBeam", "hero.badge3": "토모테라피", "hero.badge4": "Halcyon",
+                    "hero.cta1": "무료 상담", "hero.cta2": "기술 알아보기",
+                    "hero.card1.number": "10+", "hero.card1.text": "첨단 방사선치료 시스템",
+                    "hero.card2.number": "370+", "hero.card2.text": "의료 전문가",
+                    "stats.1.number": "10+", "stats.1.label": "세계적 수준의 방사선치료 시스템",
+                    "stats.2.number": "1,500", "stats.2.label": "병원 병상",
+                    "stats.3.number": "48", "stats.3.label": "중환자실 병상",
+                    "stats.4.number": "50-70%", "stats.4.label": "서구 국가 대비 비용 절감",
+                    "why.tag": "선택 이유", "why.title": "국제 환자가 당사 센터를 선택하는 이유", "why.subtitle": "세계를 선도하는 기술과 세심한 배려를 결합하여 전 세계 최고의 기관에 버금가는 종합적인 암 치료 경험을 제공합니다.",
+                    "why.card1.title": "최첨단 기술", "why.card1.text": "중국 최초의 AI 사이버나이프 M6, TrueBeam, 토모테라피, Halcyon, Ethos 적응형 방사선치료 플랫폼을 보유하고 있습니다.",
+                    "why.card2.title": "다학제팀 접근", "why.card2.text": "종양내과, 방사선종양학, 외과, 중재치료, 한의학을 포함한 다학제팀.",
+                    "why.card3.title": "경제적 우수성", "why.card3.text": "미국, 영국 등 서구 국가와 비교하여 훨씬 적은 비용으로 세계적 수준의 치료를 받을 수 있습니다.",
+                    "why.card4.title": "대기 없음", "why.card4.text": "즉시 진단 및 치료 접근 가능. 대부분의 시술에 대해 해당 주 예약 가능.",
+                    "why.card5.title": "완전한 언어 지원", "why.card5.text": "전문 의료 통역사와 이중언어 스태프가 치료 과정 내내 명확한 의사소통을 보장합니다.",
+                    "why.card6.title": "한의학 통합", "why.card6.text": "현대 방사선치료와 전통 한의학의 독창적 통합으로 전인적 회복과 더 나은 결과를 달성합니다.",
+                    "equipment.tag": "당사의 기술", "equipment.title": "세계 최고 수준의 방사선치료 장비", "equipment.subtitle": "당사 센터는 전 세계에서 가장 진보된 방사선치료 시스템에 투자하여 모든 환자에게 정확성, 안전성, 최적의 치료 결과를 보장합니다.",
+                    "equip.1.name": "사이버나이프 M6", "equip.1.subtitle": "Accuray 사이버나이프 M6", "equip.1.desc": "6세대 AI 구동 로봇 방사선외과 시스템. 실시간 종양 추적 및 다엽 콜리메이터 탑재. 1~5회 치료로 신체 전체의 종양을 서브밀리미터 정밀도로 치료.", "equip.1.tag1": "로봇 방사선외과", "equip.1.tag2": "실시간 추적", "equip.1.tag3": "뇌・전신 종양",
+                    "equip.2.name": "토모테라피", "equip.2.subtitle": "Accuray 헬리컬 토모테라피", "equip.2.desc": "IMRT, IGRT, DGRT를 하나의 시스템으로 통합. 360도 헬리컬 전달, ±0.1mm 정밀도로 복잡하고 다발성 종양에 이상적.", "equip.2.tag1": "360° 헬리컬 전달", "equip.2.tag2": "±0.1mm 정밀도", "equip.2.tag3": "복잡한 종양",
+                    "equip.3.name": "TrueBeam", "equip.3.subtitle": "Varian TrueBeam", "equip.3.desc": "HyperArc 기술을 탑재한 고정밀 영상 유도 리니어 가속기. 폐, 간, 전립선, 뇌 등 광범위한 암에 대해 빠르고 정확한 치료를 제공합니다.", "equip.3.tag1": "영상 유도", "equip.3.tag2": "HyperArc", "equip.3.tag3": "다용도 적용",
+                    "equip.4.name": "HyperArc", "equip.4.subtitle": "두개내 스테레오택틱 기술", "equip.4.desc": "두개내 종양을 위한 비공면적 스테레오택틱 방사선외과 기술. 서브밀리미터 정밀도로, 10분 내에 다발성 뇌전이를 동시에 치료.", "equip.4.tag1": "뇌전이", "equip.4.tag2": "비공면적", "equip.4.tag3": "10분 치료",
+                    "equip.5.name": "Halcyon", "equip.5.subtitle": "Varian Halcyon 시스템", "equip.5.desc": "세계 최초 100% 영상 유도 의료용 가속기. 완전 디지털화, AI 구동, 6분 완전 치료 세션. 높은 환자 편안함과 조용한 작동.", "equip.5.tag1": "100% 영상 유도", "equip.5.tag2": "6분 세션", "equip.5.tag3": "AI 구동",
+                    "equip.6.name": "Ethos", "equip.6.subtitle": "AI 적응형 방사선치료", "equip.6.desc": "세계 최초 온라인 적응형 방사선치료 플랫폼. AI가 매일의 해부학적 변화에 실시간 적응. 매 세션마다 개인화된 치료.", "equip.6.tag1": "AI 적응형", "equip.6.tag2": "매일 적응", "equip.6.tag3": "골반 암",
+                    "equip.7.name": "근접치료", "equip.7.subtitle": "GammaMedplus IX HDR", "equip.7.desc": "정밀 내부 방사선을 위한 고선량률 후장치. 방사성 원천을 종양 부위에 직접 전달. 짧은 치료 시간, 외래 시술, 높은 안전성과 최소한의 부작용.", "equip.7.tag1": "내부 방사선", "equip.7.tag2": "고선량률", "equip.7.tag3": "자궁경부・전립선",
+                    "equip.8.name": "MRI + CT 시뮬레이션", "equip.8.subtitle": "4D MRI 및 이중에너지 CT", "equip.8.desc": "지멘스 3.0T 운동 인지 MRI, 4D MRI 호흡 게이팅, 이중에너지 대구경 CT. 실시간 적응 이미징으로 치료 중 정확한 종양 추적.", "equip.8.tag1": "4D MRI", "equip.8.tag2": "운동 추적", "equip.8.tag3": "실시간",
+                    "mdt.tag": "팀 접근", "mdt.title": "다학제팀(MDT) 모델", "mdt.subtitle": "당사의 MDT는 여러 학문의 전문가를 모아 각 환자에게 가장 효과적이고 개인화된 치료 계획을 수립합니다.",
+                    "mdt.item1.title": "방사선종양학", "mdt.item1.text": "사이버나이프, TrueBeam, 토모테라피 등 최첨단 기술을 활용한 전문 방사선종양의사가 정밀 종양 표적 치료를 수행합니다.",
+                    "mdt.item2.title": "종양내과", "mdt.item2.text": "화학요법, 면역요법, 표적요법 전문의가 전신 치료 솔루션을 제공합니다.",
+                    "mdt.item3.title": "종양외과", "mdt.item3.text": "최소침습 및 로봇 기술을 사용하는 경험 풍부한 외과의사가 종양 절제를 수행합니다.",
+                    "mdt.item4.title": "전통 한의학", "mdt.item4.text": "침술, 한약, 재활을 포함한 한의학 통합으로 부작용을 줄이고 회복을 촉진합니다.",
+                    "mdt.item5.title": "중재치료", "mdt.item5.text": "TACE, 고주파 절제, 입자 이식 등 최소침습 시술로 국소적이고 정확한 치료를 실현합니다.",
+                    "process.tag": "당신의 여정", "process.title": "당신의 치료 여정", "process.subtitle": "첫 번째 문의부터 치료 후 추적 관찰까지, 개인화된 배려와 지원으로 모든 단계를 안내합니다.",
+                    "process.step1.title": "무료 상담", "process.step1.desc": "WhatsApp을 통해 의료 기록을 공유하세요. 당사 팀이 증례를 검토하고 예비 치료 계획을 제공합니다.",
+                    "process.step2.title": "여행 계획", "process.step2.desc": "비자 안내, 항공편 추천, 병원 숙박 예약을 지원합니다.",
+                    "process.step3.title": "도착 및 진단", "process.step3.desc": "공항 픽업, 종합 진단, MDT 상담으로 개인화된 치료 계획을 확정합니다.",
+                    "process.step4.title": "치료", "process.step4.desc": "세계적 수준의 방사선치료를 받으며 일상 모니터링, 부작용 관리, 지속적인 지원을 받습니다.",
+                    "process.step5.title": "추적 관찰", "process.step5.desc": "완전한 영어 의료 기록, 원격 추적 상담, 모국 의사와의 협력을 진행합니다.",
+                    "testimonials.tag": "환자 이야기", "testimonials.title": "환자의 소리", "testimonials.subtitle": "당사 센터에서 희망과 치유를 찾은 국제 환자들의 실제 이야기.",
+                    "testimonials.1.text": "자국에서 방사선치료를 6개월 기다려야 한다고 들은 후, 진사저우에 왔습니다. 사이버나이프 치료는 단 3회로 완료되었습니다. 종양은 크게 축소되었습니다. 믿을 수 없는 기술과 배려 깊은 스태프입니다.",
+                    "testimonials.2.text": "비용은 자국에서 지불할 것의 절반 미만이었지만, 기술은 훨씬 더 진보적이었습니다. Halcyon 시스템은 한 세션에 6분 만에 전립선암을 치료했습니다. 전체 경험이 순조롭고 전문적이었습니다.",
+                    "testimonials.3.text": "뇌전이는 HyperArc 기술로 한 번의 10분 세션으로 치료되었습니다. 정확도는 놀라웠습니다. 팀은 도착부터 추적까지 모든 것을 조정했습니다. 삶의 두 번째 기회에 감사합니다.",
+                    "contact.title": "치유의 여정을 시작할 준비가 되셨나요?", "contact.subtitle": "오늘 무료 상담에 문의하세요. 당사의 국제 환자 코디네이터가 24시간 이내에 답변하여 증례를 논의하고 다음 단계를 안내합니다.",
+                    "contact.address": "주소", "contact.transport": "교통", "contact.transportDetail": "지하철 6호선, 헝샤 역, C 출구 (도보 100m)",
+                    "contact.ctaTitle": "무료 상담 받기", "contact.ctaText": "의료 기록을 보내주시면 24시간 이내에 예비 평가를 제공해 드립니다.", "contact.ctaButton": "WhatsApp으로 문의",
+                    "footer.brand": "진사저우 종양 방사선치료 센터", "footer.desc": "광저우 중의약대학 진사저우 병원——의료, 교육, 과학연구, 예방을 통합한 현대적 3급 종합병원.",
+                    "footer.quickLinks": "빠른 링크", "footer.services": "서비스", "footer.contact": "연락처",
+                    "footer.link.about": "소개", "footer.link.equipment": "장비・기술", "footer.link.mdt": "MDT 팀", "footer.link.process": "치료 과정",
+                    "footer.link.stereotactic": "스테레오택틱 방사선외과", "footer.link.imrt": "IMRT / IGRT", "footer.link.brachytherapy": "근접치료", "footer.link.tcm": "한의학 통합",
+                    "footer.address": "광저우시 바이윈구 진사저우 리추안 동제 1호", "footer.metro": "지하철 6호선, 헝샤 역",
+                    "footer.copyright": " 2024 광저우 중의약대학 진사저우 병원. 모든 권리 보유."
+                }
+            };
+
+            let currentLang = 'en';
+            const rtlLangs = ['ar', 'he'];
+
+            function changeLanguage(lang) {
+                currentLang = lang;
+                document.documentElement.lang = lang;
+                document.documentElement.dir = rtlLangs.includes(lang) ? 'rtl' : 'ltr';
+
+                const t = translations[lang] || translations['en'];
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (t[key] !== undefined) {
+                        if (key === 'hero.title') {
+                            el.innerHTML = t[key].replace(/\n/g, '<br>');
+                        } else {
+                            el.textContent = t[key];
+                        }
+                    }
+                });
+
+                localStorage.setItem('preferredLang', lang);
+            }
+
+            function initLanguage() {
+                const saved = localStorage.getItem('preferredLang');
+                if (saved && translations[saved]) {
+                    document.getElementById('langSelect').value = saved;
+                    changeLanguage(saved);
+                }
+            }
+
+            function toggleMobileMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '70px';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '20px';
+                navLinks.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+                navLinks.style.zIndex = '999';
+            }
+
+            // Scroll animations
+            function initScrollAnimations() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+            }
+
+            // Navbar scroll effect
+            function initNavbarScroll() {
+                const navbar = document.getElementById('navbar');
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                    // Close mobile menu
+                    const navLinks = document.getElementById('navLinks');
+                    if (window.innerWidth <= 768) {
+                        navLinks.style.display = 'none';
+                    }
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', () => {
+                initLanguage();
+                initScrollAnimations();
+                initNavbarScroll();
+            });
+        </script>
+    </body>
+    </html>
