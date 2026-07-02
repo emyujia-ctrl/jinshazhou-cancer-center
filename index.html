@@ -157,24 +157,24 @@
             border-color: var(--primary);
         }
 
-        .whatsapp-btn-nav {
+        .phone-btn-nav {
             display: flex;
             align-items: center;
             gap: 8px;
             padding: 10px 20px;
-            background: linear-gradient(135deg, #25d366, #128c7e);
+            background: linear-gradient(135deg, #0066CC, #004c99);
             color: white;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
             transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
         }
 
-        .whatsapp-btn-nav:hover {
+        .phone-btn-nav:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 6px 25px rgba(0, 102, 204, 0.4);
         }
 
         .mobile-menu-btn {
@@ -303,24 +303,24 @@
             box-shadow: 0 8px 30px rgba(0,102,204,0.4);
         }
 
-        .btn-whatsapp {
+        .btn-phone {
             display: inline-flex;
             align-items: center;
             gap: 10px;
             padding: 16px 36px;
-            background: linear-gradient(135deg, #25d366, #128c7e);
+            background: linear-gradient(135deg, #0066CC, #004c99);
             color: white;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.05rem;
             transition: var(--transition);
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 102, 204, 0.3);
         }
 
-        .btn-whatsapp:hover {
+        .btn-phone:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 8px 30px rgba(0, 102, 204, 0.4);
         }
 
         .hero-visual {
@@ -864,29 +864,29 @@
             margin-bottom: 32px;
         }
 
-        .whatsapp-big-btn {
+        .phone-big-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
             padding: 20px 48px;
-            background: linear-gradient(135deg, #25d366, #128c7e);
+            background: linear-gradient(135deg, #0066CC, #004c99);
             color: white;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
             font-size: 1.2rem;
             transition: var(--transition);
-            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 8px 30px rgba(0, 102, 204, 0.4);
             width: 100%;
         }
 
-        .whatsapp-big-btn:hover {
+        .phone-big-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 12px 40px rgba(0, 102, 204, 0.5);
         }
 
-        .whatsapp-number {
+        .phone-number {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary);
@@ -958,14 +958,14 @@
             font-size: 0.9rem;
         }
 
-        .float-whatsapp {
+        .float-phone {
             position: fixed;
             bottom: 30px;
             right: 30px;
             z-index: 999;
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #25d366, #128c7e);
+            background: linear-gradient(135deg, #0066CC, #004c99);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -973,20 +973,20 @@
             color: white;
             font-size: 1.8rem;
             text-decoration: none;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 4px 20px rgba(0, 102, 204, 0.4);
             transition: var(--transition);
             animation: pulse 2s infinite;
         }
 
-        .float-whatsapp:hover {
+        .float-phone:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+            box-shadow: 0 6px 30px rgba(0, 102, 204, 0.6);
         }
 
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0.5); }
+            70% { box-shadow: 0 0 0 20px rgba(0, 102, 204, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0); }
         }
 
         @media (max-width: 1024px) {
@@ -1067,9 +1067,9 @@
                     <option value="ms">Bahasa Melayu</option>
                     <option value="mn">Монгол</option>
                 </select>
-                <a href="https://wa.me/8613318756178" class="whatsapp-btn-nav" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp</span>
+                <a href="tel:+8613318756178" class="phone-btn-nav" target="_blank">
+                    <i class="fab fa-phone"></i>
+                    <span>Phone</span>
                 </a>
                 <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
                     <i class="fas fa-bars"></i>
@@ -1095,8 +1095,8 @@
                     <div class="badge"><i class="fas fa-check-circle"></i><span data-i18n="hero.badge4">Halcyon</span></div>
                 </div>
                 <div class="hero-cta">
-                    <a href="https://wa.me/8613318756178" class="btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
+                    <a href="tel:+8613318756178" class="btn-phone" target="_blank">
+                        <i class="fab fa-phone"></i>
                         <span data-i18n="hero.cta1">Free Consultation</span>
                     </a>
                     <a href="#equipment" class="btn-primary">
@@ -1403,7 +1403,7 @@
                 <div class="step-item fade-in">
                     <div class="step-number">1</div>
                     <h3 class="step-title" data-i18n="process.step1.title">Free Consultation</h3>
-                    <p class="step-desc" data-i18n="process.step1.desc">Share your medical records via WhatsApp. Our team reviews your case and provides a preliminary treatment plan.</p>
+                    <p class="step-desc" data-i18n="process.step1.desc">Share your medical records by phone. Our team reviews your case and provides a preliminary treatment plan.</p>
                 </div>
                 <div class="step-item fade-in">
                     <div class="step-number">2</div>
@@ -1478,10 +1478,10 @@
                 <p data-i18n="contact.subtitle">Contact us today for a free consultation. Our international patient coordinator will respond within 24 hours to discuss your case and guide you through the next steps.</p>
                 <div class="contact-info">
                     <div class="contact-info-item">
-                        <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-info-icon"><i class="fab fa-phone"></i></div>
                         <div class="contact-info-text">
-                            <h4>WhatsApp</h4>
-                            <a href="https://wa.me/8613318756178" target="_blank">+86 133 1875 6178</a>
+                            <h4>Phone</h4>
+                            <a href="tel:+8613318756178" target="_blank">+86 133 1875 6178</a>
                         </div>
                     </div>
                     <div class="contact-info-item">
@@ -1503,11 +1503,11 @@
             <div class="contact-cta-box">
                 <h3 data-i18n="contact.ctaTitle">Get Free Consultation</h3>
                 <p data-i18n="contact.ctaText">Send us your medical records and we will provide a preliminary assessment within 24 hours.</p>
-                <a href="https://wa.me/8613318756178" class="whatsapp-big-btn" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    <span data-i18n="contact.ctaButton">Contact on WhatsApp</span>
+                <a href="tel:+8613318756178" class="phone-big-btn" target="_blank">
+                    <i class="fab fa-phone"></i>
+                    <span data-i18n="contact.ctaButton">Call Now</span>
                 </a>
-                <span class="whatsapp-number">+86 133 1875 6178</span>
+                <span class="phone-number">+86 133 1875 6178</span>
             </div>
         </div>
     </section>
@@ -1539,7 +1539,7 @@
             <div class="footer-links">
                 <h4 data-i18n="footer.contact">Contact</h4>
                 <ul>
-                    <li><a href="https://wa.me/8613318756178" target="_blank">WhatsApp: +86 133 1875 6178</a></li>
+                    <li><a href="tel:+8613318756178" target="_blank">Phone: +86 133 1875 6178</a></li>
                     <li><span data-i18n="footer.address">No.1 Lichuan East Street, Jinshazhou, Guangzhou</span></li>
                     <li><span data-i18n="footer.metro">Metro Line 6, Hengsha Station</span></li>
                 </ul>
@@ -1550,8 +1550,8 @@
         </div>
     </footer>
 
-        <a href="https://wa.me/8613318756178" class="float-whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i>
+        <a href="tel:+8613318756178" class="float-phone" target="_blank">
+            <i class="fab fa-phone"></i>
         </a>
 
         <script>
@@ -1594,7 +1594,7 @@
                     "mdt.item4.title": "Traditional Chinese Medicine", "mdt.item4.text": "TCM integration including acupuncture, herbal medicine, and rehabilitation to reduce side effects and improve recovery.",
                     "mdt.item5.title": "Interventional Therapy", "mdt.item5.text": "Minimally invasive procedures including TACE, radiofrequency ablation, and particle implantation for localized treatment.",
                     "process.tag": "Your Journey", "process.title": "Your Treatment Journey", "process.subtitle": "From your first inquiry to post-treatment follow-up, we guide you every step of the way with personalized care and support.",
-                    "process.step1.title": "Free Consultation", "process.step1.desc": "Share your medical records via WhatsApp. Our team reviews your case and provides a preliminary treatment plan.",
+                    "process.step1.title": "Free Consultation", "process.step1.desc": "Share your medical records via phone. Our team reviews your case and provides a preliminary treatment plan.",
                     "process.step2.title": "Travel Planning", "process.step2.desc": "We assist with visa guidance, flight recommendations, and hospital accommodation arrangements.",
                     "process.step3.title": "Arrival & Diagnosis", "process.step3.desc": "Airport pickup, comprehensive diagnostics, and MDT consultation to finalize your personalized treatment plan.",
                     "process.step4.title": "Treatment", "process.step4.desc": "Receive world-class radiotherapy with daily monitoring, side effect management, and continuous support.",
@@ -1605,7 +1605,7 @@
                     "testimonials.3.text": "My brain metastases were treated with HyperArc technology in a single 10-minute session. The precision was remarkable. The team coordinated everything from my arrival to follow-up. I am grateful for this second chance at life.",
                     "contact.title": "Ready to Start Your Healing Journey?", "contact.subtitle": "Contact us today for a free consultation. Our international patient coordinator will respond within 24 hours to discuss your case and guide you through the next steps.",
                     "contact.address": "Address", "contact.transport": "Transport", "contact.transportDetail": "Metro Line 6, Hengsha Station Exit C (100m walk)",
-                    "contact.ctaTitle": "Get Free Consultation", "contact.ctaText": "Send us your medical records and we will provide a preliminary assessment within 24 hours.", "contact.ctaButton": "Contact on WhatsApp",
+                    "contact.ctaTitle": "Get Free Consultation", "contact.ctaText": "Send us your medical records and we will provide a preliminary assessment within 24 hours.", "contact.ctaButton": "Call Now",
                     "footer.brand": "Jinshazhou Radiotherapy Center", "footer.desc": "Guangzhou University of Chinese Medicine Jinshazhou Hospital - A modern tertiary Grade-A hospital integrating medical treatment, teaching, scientific research, and preventive healthcare.",
                     "footer.quickLinks": "Quick Links", "footer.services": "Services", "footer.contact": "Contact",
                     "footer.link.about": "About Us", "footer.link.equipment": "Equipment", "footer.link.mdt": "MDT Team", "footer.link.process": "Treatment Process",
@@ -1650,7 +1650,7 @@
                     "mdt.item4.title": "传统中医", "mdt.item4.text": "针灸、中药和康复治疗的整合，减少副作用并促进康复。",
                     "mdt.item5.title": "介入治疗", "mdt.item5.text": "TACE、射频消融和粒子植入等微创介入治疗，实现局部精准治疗。",
                     "process.tag": "您的旅程", "process.title": "您的治疗旅程", "process.subtitle": "从首次咨询到治疗后随访，我们全程为您提供个性化护理和支持。",
-                    "process.step1.title": "免费咨询", "process.step1.desc": "通过WhatsApp分享您的病历资料。我们的团队将评估您的病例并提供初步治疗方案。",
+                    "process.step1.title": "免费咨询", "process.step1.desc": "通过电话分享您的病历资料。我们的团队将评估您的病例并提供初步治疗方案。",
                     "process.step2.title": "行程规划", "process.step2.desc": "我们协助签证指导、航班推荐和医院住宿安排。",
                     "process.step3.title": "抵达与诊断", "process.step3.desc": "机场接送、全面诊断检查和MDT会诊，制定最终个性化治疗方案。",
                     "process.step4.title": "治疗", "process.step4.desc": "接受世界级放疗，全程日常监测、副作用管理和持续支持。",
@@ -1661,7 +1661,7 @@
                     "testimonials.3.text": "我的脑转移瘤通过HyperArc技术在一次10分钟的治疗中完成。精度令人难以置信。团队协调了我从抵达到随访的所有事宜。我感激这个重生的机会。",
                     "contact.title": "准备好开始您的康复之旅了吗？", "contact.subtitle": "立即联系我们进行免费咨询。我们的国际患者协调员将在24小时内回复您，讨论您的病例并指导您下一步。",
                     "contact.address": "地址", "contact.transport": "交通", "contact.transportDetail": "地铁6号线横沙站C出口（步行100米）",
-                    "contact.ctaTitle": "获取免费咨询", "contact.ctaText": "发送您的病历资料，我们将在24小时内提供初步评估。", "contact.ctaButton": "WhatsApp咨询",
+                    "contact.ctaTitle": "获取免费咨询", "contact.ctaText": "发送您的病历资料，我们将在24小时内提供初步评估。", "contact.ctaButton": "电话咨询",
                     "footer.brand": "金沙洲肿瘤放疗中心", "footer.desc": "广州中医药大学金沙洲医院——集医疗、教学、科研、预防为一体的现代化三级综合医院。",
                     "footer.quickLinks": "快速链接", "footer.services": "服务项目", "footer.contact": "联系方式",
                     "footer.link.about": "关于我们", "footer.link.equipment": "设备技术", "footer.link.mdt": "MDT团队", "footer.link.process": "治疗流程",
@@ -1761,7 +1761,7 @@
                     "mdt.item4.title": "Medicina Tradicional China", "mdt.item4.text": "Integración de MTC incluyendo acupuntura, medicina herbal y rehabilitación para reducir efectos secundarios y mejorar la recuperación.",
                     "mdt.item5.title": "Terapia Intervencionista", "mdt.item5.text": "Procedimientos mínimamente invasivos incluyendo TACE, ablación por radiofrecuencia e implantación de partículas.",
                     "process.tag": "Su Viaje", "process.title": "Su Viaje de Tratamiento", "process.subtitle": "Desde su primera consulta hasta el seguimiento post-tratamiento, lo guiamos en cada paso con atención personalizada y apoyo.",
-                    "process.step1.title": "Consulta Gratuita", "process.step1.desc": "Comparta sus registros médicos a través de WhatsApp. Nuestro equipo revisa su caso y proporciona un plan de tratamiento preliminar.",
+                    "process.step1.title": "Consulta Gratuita", "process.step1.desc": "Comparta sus registros médicos a través de nuestro número telefónico. Nuestro equipo revisa su caso y proporciona un plan de tratamiento preliminar.",
                     "process.step2.title": "Planificación de Viaje", "process.step2.desc": "Le asistimos con orientación de visa, recomendaciones de vuelos y arreglos de alojamiento hospitalario.",
                     "process.step3.title": "Llegada y Diagnóstico", "process.step3.desc": "Recogida en el aeropuerto, diagnósticos integrales y consulta MDT para finalizar su plan de tratamiento personalizado.",
                     "process.step4.title": "Tratamiento", "process.step4.desc": "Reciba radioterapia de clase mundial con monitoreo diario, gestión de efectos secundarios y apoyo continuo.",
@@ -1772,7 +1772,7 @@
                     "testimonials.3.text": "Mis metástasis cerebrales fueron tratadas con tecnología HyperArc en una sola sesión de 10 minutos. La precisión fue notable. El equipo coordinó todo desde mi llegada hasta el seguimiento. Estoy agradecido por esta segunda oportunidad en la vida.",
                     "contact.title": "¿Listo para Comenzar su Viaje de Sanación?", "contact.subtitle": "Contáctenos hoy para una consulta gratuita. Nuestro coordinador de pacientes internacionales responderá dentro de 24 horas para discutir su caso.",
                     "contact.address": "Dirección", "contact.transport": "Transporte", "contact.transportDetail": "Línea de Metro 6, Estación Hengsha, Salida C (caminar 100m)",
-                    "contact.ctaTitle": "Obtener Consulta Gratuita", "contact.ctaText": "Envíenos sus registros médicos y le proporcionaremos una evaluación preliminar en 24 horas.", "contact.ctaButton": "Contactar por WhatsApp",
+                    "contact.ctaTitle": "Obtener Consulta Gratuita", "contact.ctaText": "Envíenos sus registros médicos y le proporcionaremos una evaluación preliminar en 24 horas.", "contact.ctaButton": "Llamar Ahora",
                     "footer.brand": "Centro de Radioterapia Oncológica Jinshazhou", "footer.desc": "Hospital Jinshazhou de la Universidad de Medicina China de Guangzhou - Un hospital moderno de tercer nivel grado A que integra tratamiento médico, enseñanza, investigación científica y atención preventiva.",
                     "footer.quickLinks": "Enlaces Rápidos", "footer.services": "Servicios", "footer.contact": "Contacto",
                     "footer.link.about": "Sobre Nosotros", "footer.link.equipment": "Equipamiento", "footer.link.mdt": "Equipo MDT", "footer.link.process": "Proceso de Tratamiento",
@@ -1816,7 +1816,7 @@
                     "mdt.item4.title": "Médecine Traditionnelle Chinoise", "mdt.item4.text": "Intégration de MTC incluant acupuncture, phytothérapie et rééducation pour réduire les effets secondaires et améliorer la récupération.",
                     "mdt.item5.title": "Thérapie Interventionnelle", "mdt.item5.text": "Procédures mini-invasives incluant TACE, ablation par radiofréquence et implantation de particules.",
                     "process.tag": "Votre Parcours", "process.title": "Votre Parcours de Traitement", "process.subtitle": "De votre première consultation au suivi post-traitement, nous vous guidons à chaque étape avec des soins personnalisés et un soutien.",
-                    "process.step1.title": "Consultation Gratuite", "process.step1.desc": "Partagez vos dossiers médicaux via WhatsApp. Notre équipe examine votre cas et fournit un plan de traitement préliminaire.",
+                    "process.step1.title": "Consultation Gratuite", "process.step1.desc": "Partagez vos dossiers médicaux par téléphone. Notre équipe examine votre cas et fournit un plan de traitement préliminaire.",
                     "process.step2.title": "Planification du Voyage", "process.step2.desc": "Nous vous assistons pour les conseils de visa, les recommandations de vols et les arrangements d'hébergement à l'hôpital.",
                     "process.step3.title": "Arrivée et Diagnostic", "process.step3.desc": "Prise en charge à l'aéroport, diagnostics complets et consultation MDT pour finaliser votre plan de traitement personnalisé.",
                     "process.step4.title": "Traitement", "process.step4.desc": "Recevez une radiothérapie de classe mondiale avec surveillance quotidienne, gestion des effets secondaires et soutien continu.",
@@ -1827,7 +1827,7 @@
                     "testimonials.3.text": "Mes métastases cérébrales ont été traitées avec la technologie HyperArc en une seule séance de 10 minutes. La précision était remarquable. L'équipe a coordonné tout depuis mon arrivée jusqu'au suivi. Je suis reconnaissant pour cette seconde chance dans la vie.",
                     "contact.title": "Prêt à Commencer Votre Parcours de Guérison ?", "contact.subtitle": "Contactez-nous aujourd'hui pour une consultation gratuite. Notre coordinateur de patients internationaux répondra dans les 24 heures pour discuter de votre cas.",
                     "contact.address": "Adresse", "contact.transport": "Transport", "contact.transportDetail": "Ligne de Métro 6, Station Hengsha, Sortie C (marche 100m)",
-                    "contact.ctaTitle": "Obtenir une Consultation Gratuite", "contact.ctaText": "Envoyez-nous vos dossiers médicaux et nous vous fournirons une évaluation préliminaire dans les 24 heures.", "contact.ctaButton": "Contacter sur WhatsApp",
+                    "contact.ctaTitle": "Obtenir une Consultation Gratuite", "contact.ctaText": "Envoyez-nous vos dossiers médicaux et nous vous fournirons une évaluation préliminaire dans les 24 heures.", "contact.ctaButton": "Appeler Maintenant",
                     "footer.brand": "Centre de Radiothérapie Oncologique Jinshazhou", "footer.desc": "Hôpital Jinshazhou de l'Université de Médecine Chinoise de Guangzhou - Un hôpital moderne de troisième niveau grade A intégrant traitement médical, enseignement, recherche scientifique et soins préventifs.",
                     "footer.quickLinks": "Liens Rapides", "footer.services": "Services", "footer.contact": "Contact",
                     "footer.link.about": "À Propos", "footer.link.equipment": "Équipement", "footer.link.mdt": "Équipe MDT", "footer.link.process": "Processus de Traitement",
@@ -1871,7 +1871,7 @@
                     "mdt.item4.title": "Традиционная Китайская Медицина", "mdt.item4.text": "Интеграция ТКМ, включая иглоукалывание, фитотерапию и реабилитацию, для снижения побочных эффектов и улучшения восстановления.",
                     "mdt.item5.title": "Интервенционная Терапия", "mdt.item5.text": "Малоинвазивные процедуры, включая ТАСЕ, радиочастотную абляцию и имплантацию частиц.",
                     "process.tag": "Ваше Путешествие", "process.title": "Ваше Путешествие Лечения", "process.subtitle": "От первой консультации до послетерапевтического наблюдения мы сопровождаем вас на каждом шагу с персонализированным уходом и поддержкой.",
-                    "process.step1.title": "Бесплатная Консультация", "process.step1.desc": "Поделитесь своими медицинскими записями через WhatsApp. Наша команда рассмотрит ваш случай и предоставит предварительный план лечения.",
+                    "process.step1.title": "Бесплатная Консультация", "process.step1.desc": "Поделитесь своими медицинскими записями по телефону. Наша команда рассмотрит ваш случай и предоставит предварительный план лечения.",
                     "process.step2.title": "Планирование Поездки", "process.step2.desc": "Мы помогаем с консультациями по визам, рекомендациями по рейсам и организацией проживания в больнице.",
                     "process.step3.title": "Прибытие и Диагностика", "process.step3.desc": "Встреча в аэропорту, комплексная диагностика и консультация МРД для финализации вашего персонализированного плана лечения.",
                     "process.step4.title": "Лечение", "process.step4.desc": "Получите лучевую терапию мирового уровня с ежедневным мониторингом, управлением побочными эффектами и непрерывной поддержкой.",
@@ -1882,7 +1882,7 @@
                     "testimonials.3.text": "Мои метастазы мозга были вылечены технологией HyperArc за одну 10-минутную сессию. Точность была замечательной. Команда скоординировала все с момента моего прибытия до наблюдения. Я благодарен за этот второй шанс в жизни.",
                     "contact.title": "Готовы Начать Свой Путь к Исцелению?", "contact.subtitle": "Свяжитесь с нами сегодня для бесплатной консультации. Наш координатор международных пациентов ответит в течение 24 часов для обсуждения вашего случая.",
                     "contact.address": "Адрес", "contact.transport": "Транспорт", "contact.transportDetail": "Линия метро 6, станция Хэнша, выход C (идти 100 м)",
-                    "contact.ctaTitle": "Получить Бесплатную Консультацию", "contact.ctaText": "Отправьте нам свои медицинские записи, и мы предоставим предварительную оценку в течение 24 часов.", "contact.ctaButton": "Связаться через WhatsApp",
+                    "contact.ctaTitle": "Получить Бесплатную Консультацию", "contact.ctaText": "Отправьте нам свои медицинские записи, и мы предоставим предварительную оценку в течение 24 часов.", "contact.ctaButton": "Связаться по телефону",
                     "footer.brand": "Онкологический Радиотерапевтический Центр Цзиньшачжоу", "footer.desc": "Больница Цзиньшачжоу при Университете Китайской Медицины Гуанчжоу — Современная больница третьего уровня класса А, объединяющая медицинское лечение, обучение, научные исследования и профилактику.",
                     "footer.quickLinks": "Быстрые Ссылки", "footer.services": "Услуги", "footer.contact": "Контакты",
                     "footer.link.about": "О Нас", "footer.link.equipment": "Оборудование", "footer.link.mdt": "Команда МРД", "footer.link.process": "Процесс Лечения",
@@ -1926,7 +1926,7 @@
                     "mdt.item4.title": "伝統中医学", "mdt.item4.text": "鍼灸、漢方薬、リハビリテーションを含む中医学統合により、副作用を軽減し回復を促進します。",
                     "mdt.item5.title": "介入治療", "mdt.item5.text": "TACE、ラジオ波焼灼、粒子植入などのミニマルインべーシブ治療で、局所的かつ正確な治療を実現。",
                     "process.tag": "あなたの旅", "process.title": "治療の流れ", "process.subtitle": "最初の問い合わせから治療後のフォローアップまで、パーソナライズドなケアとサポートであなたを各ステップで導きます。",
-                    "process.step1.title": "無料相談", "process.step1.desc": "WhatsAppでカルテを共有してください。当チームが症例を検討し、予備的な治療計画を提示します。",
+                    "process.step1.title": "無料相談", "process.step1.desc": "お電話でカルテを共有してください。当チームが症例を検討し、予備的な治療計画を提示します。",
                     "process.step2.title": "渡航計画", "process.step2.desc": "ビザ案内、フライト推奨、病院宿泊手配をサポートします。",
                     "process.step3.title": "到着・診断", "process.step3.desc": "空港送迎、総合診断、MDT診察で最終的なパーソナライズド治療計画を確定します。",
                     "process.step4.title": "治療", "process.step4.desc": "世界レベルの放射線治療を受け、日常モニタリング、副作用管理、継続的サポートを受けます。",
@@ -1937,7 +1937,7 @@
                     "testimonials.3.text": "脳転移はHyperArc技術で10分の1回のセッションで治療されました。精度は驚異的でした。到着からフォローアップまで、チームがすべてを調整してくれました。人生の再出発に感謝しています。",
                     "contact.title": "治癒の旅を始める準備はできましたか？", "contact.subtitle": "本日無料相談にお問い合わせください。当院の国際患者コーディネーターが24時間以内に返信し、症例をご相談し、次のステップをご案内します。",
                     "contact.address": "住所", "contact.transport": "アクセス", "contact.transportDetail": "地下鉄6号線・横沙駅・C出口（徒歩100m）",
-                    "contact.ctaTitle": "無料相談を受ける", "contact.ctaText": "カルテをお送りください。24時間以内に予備的な評価を提供します。", "contact.ctaButton": "WhatsAppで相談",
+                    "contact.ctaTitle": "無料相談を受ける", "contact.ctaText": "カルテをお送りください。24時間以内に予備的な評価を提供します。", "contact.ctaButton": "お電話で相談",
                     "footer.brand": "金沙洲腫瘍放射線治療センター", "footer.desc": "広州中医薬大学金沙洲病院——医療、教育、科学研究、予防を統合した現代的三級甲等総合病院。",
                     "footer.quickLinks": "クイックリンク", "footer.services": "サービス", "footer.contact": "お問い合わせ",
                     "footer.link.about": "当センターについて", "footer.link.equipment": "設備・技術", "footer.link.mdt": "MDTチーム", "footer.link.process": "治療の流れ",
@@ -1981,7 +1981,7 @@
                     "mdt.item4.title": "전통 한의학", "mdt.item4.text": "침술, 한약, 재활을 포함한 한의학 통합으로 부작용을 줄이고 회복을 촉진합니다.",
                     "mdt.item5.title": "중재치료", "mdt.item5.text": "TACE, 고주파 절제, 입자 이식 등 최소침습 시술로 국소적이고 정확한 치료를 실현합니다.",
                     "process.tag": "당신의 여정", "process.title": "당신의 치료 여정", "process.subtitle": "첫 번째 문의부터 치료 후 추적 관찰까지, 개인화된 배려와 지원으로 모든 단계를 안내합니다.",
-                    "process.step1.title": "무료 상담", "process.step1.desc": "WhatsApp을 통해 의료 기록을 공유하세요. 당사 팀이 증례를 검토하고 예비 치료 계획을 제공합니다.",
+                    "process.step1.title": "무료 상담", "process.step1.desc": "전화로 의료 기록을 공유하세요. 당사 팀이 증례를 검토하고 예비 치료 계획을 제공합니다.",
                     "process.step2.title": "여행 계획", "process.step2.desc": "비자 안내, 항공편 추천, 병원 숙박 예약을 지원합니다.",
                     "process.step3.title": "도착 및 진단", "process.step3.desc": "공항 픽업, 종합 진단, MDT 상담으로 개인화된 치료 계획을 확정합니다.",
                     "process.step4.title": "치료", "process.step4.desc": "세계적 수준의 방사선치료를 받으며 일상 모니터링, 부작용 관리, 지속적인 지원을 받습니다.",
@@ -1992,7 +1992,7 @@
                     "testimonials.3.text": "뇌전이는 HyperArc 기술로 한 번의 10분 세션으로 치료되었습니다. 정확도는 놀라웠습니다. 팀은 도착부터 추적까지 모든 것을 조정했습니다. 삶의 두 번째 기회에 감사합니다.",
                     "contact.title": "치유의 여정을 시작할 준비가 되셨나요?", "contact.subtitle": "오늘 무료 상담에 문의하세요. 당사의 국제 환자 코디네이터가 24시간 이내에 답변하여 증례를 논의하고 다음 단계를 안내합니다.",
                     "contact.address": "주소", "contact.transport": "교통", "contact.transportDetail": "지하철 6호선, 헝샤 역, C 출구 (도보 100m)",
-                    "contact.ctaTitle": "무료 상담 받기", "contact.ctaText": "의료 기록을 보내주시면 24시간 이내에 예비 평가를 제공해 드립니다.", "contact.ctaButton": "WhatsApp으로 문의",
+                    "contact.ctaTitle": "무료 상담 받기", "contact.ctaText": "의료 기록을 보내주시면 24시간 이내에 예비 평가를 제공해 드립니다.", "contact.ctaButton": "전화 문의",
                     "footer.brand": "진사저우 종양 방사선치료 센터", "footer.desc": "광저우 중의약대학 진사저우 병원——의료, 교육, 과학연구, 예방을 통합한 현대적 3급 종합병원.",
                     "footer.quickLinks": "빠른 링크", "footer.services": "서비스", "footer.contact": "연락처",
                     "footer.link.about": "소개", "footer.link.equipment": "장비・기술", "footer.link.mdt": "MDT 팀", "footer.link.process": "치료 과정",
